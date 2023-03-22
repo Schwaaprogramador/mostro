@@ -4,26 +4,26 @@ import styled from './Navbar.module.css';
 
 function Navbar() {
   return (
-    <div>
+    <>
             <nav className={styled.navbar}>
 
                 {/* <div>
                 <img src={Logo} alt="logo" className={styled.img}/>
                 </div> */}
             
-                <div className={styled.links}>
+            
         
-                    <p><Link to="/about">About</Link></p>
-                    <p><Link to="/culture">Culture</Link></p>
-                    <p><Link to="/store">Store</Link></p>
-                    <p><Link to="/contact">Contact</Link></p>
+                    <p><Link to="/about" className={styled.link}>About</Link></p>
+                    <p><Link to="/culture" className={styled.link}>Culture</Link></p>
+                    <p><Link to="/store" className={styled.link}>Store</Link></p>
+                    <p><Link to="/contact" className={styled.link}>Contact</Link></p>
                
 
-                </div>
+                
             
             
             </nav>
-    </div>
+    </>
   )
 }
 

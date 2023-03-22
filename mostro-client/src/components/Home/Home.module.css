@@ -1,0 +1,10 @@
+.container {
+    height: 100vh;
+    background-image: url('../../assets/img/pexels-clive-kim-4150118.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
