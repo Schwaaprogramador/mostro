@@ -1,18 +1,38 @@
 .navbar {
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
-    justify-content:space-around;
-    padding: 2rem;
-    gap: 1rem;
+    
     color: aliceblue;
-    height: 3vh;
-    background-color: black;
     position: fixed;
-    width: 100vw;
+    top:20%;
+    left: 0%;
+}
+.enlaces{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 4rem;
+}
+
+.closeIcon {
+   margin: 10px;
+}
+
+.button {
+    height: 15px;
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    
+}
+.button:hover {
+    background-color: rgb(232, 6, 6);
 }
 
 .link {
     text-decoration: none;
     color: aliceblue;
+    
 }
 
 .img {

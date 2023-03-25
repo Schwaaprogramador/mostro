@@ -4,13 +4,33 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: start;
+    
+    
 }
 
 .img {
-    padding: 2rem;
+    padding: 1rem;
     height: 10vh;
+}
+.img:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home {
+    height: 100vh;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 48%;
 }
 
