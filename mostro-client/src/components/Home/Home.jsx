@@ -6,12 +6,20 @@ import About from '../About/About';
 import Culture from '../Culture/Culture';
 import Store from '../Store/Store';
 import Contact from '../Contact/Contact';
+import {Animated} from "react-animated-css";
 
 function Home() {
 
 //------Logica para navbar lateral--
 const [mostrar, setMostrar] = useState(false)
-console.log(mostrar);
+
+//--------------- Ejcutar un boton con un onClick para que lleve al top de la pagina-----
+// const scrollToTop = () => {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: 'smooth'
+//   });
+// };
 
 
   return (
@@ -22,11 +30,15 @@ console.log(mostrar);
 
       <div className={styled.home}>
 
-        <div className={styled.buttonContainer}>
-          <button onClick={() => setMostrar(true)} className={styled.button}>
-            <img src={logo} alt="logo" className={styled.img}/>
-          </button>
-        </div>
+            <Animated animationIn="zoomInUp" animationOut="fadeOut" isVisible={true} animationInDuration ='3000'>
+                <div className={styled.buttonContainer}>
+                    <button onClick={() => setMostrar(true)}  className={styled.button}>
+            
+                      <img src={logo} alt="logo" className={styled.img}/>
+          
+                  </button>
+                </div>
+            </Animated>
         
       </div>
 

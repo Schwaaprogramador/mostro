@@ -5,4 +5,17 @@
     height: 100vh;
     background-color: rgb(5, 82, 74);
     color: aliceblue;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.item {
+    
+    flex-direction: column;
+    height: 10vh;
+}
+
+.img {
+    height: 200px;
+    width: 200px;
 }
