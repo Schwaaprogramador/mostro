@@ -7,7 +7,7 @@ function About() {
   return (
     <div>
         <div className={styled.container}>
-            <p><Link to="section2" smooth={true}>Ir a Cultura</Link></p>
+            <p><Link to="section2">Ir a Cultura</Link></p>
             <h3>About</h3>
         </div>
      

@@ -1,15 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import styled from './Navbar.module.css';   
+import styled from './Navbar.module.css';  
+import logo from '../../assets/img/logo.svg';
 
 function Navbar() {
   return (
     <>
             <nav className={styled.navbar}>
 
-                {/* <div>
-                <img src={Logo} alt="logo" className={styled.img}/>
-                </div> */}
+                  <button>
+                  <img src={logo} alt="logo" className={styled.img}/>
+                  </button>
+                    
+                
             
             
         
