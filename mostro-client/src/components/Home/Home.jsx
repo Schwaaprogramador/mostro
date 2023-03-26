@@ -6,7 +6,8 @@ import About from '../About/About';
 import Culture from '../Culture/Culture';
 import Store from '../Store/Store';
 import Contact from '../Contact/Contact';
-import {Animated} from "react-animated-css";
+import { Animated } from "react-animated-css";
+import { CgChevronRightR } from "react-icons/cg";
 
 function Home() {
 
@@ -39,6 +40,19 @@ const [mostrar, setMostrar] = useState(false)
                   </button>
                 </div>
             </Animated>
+
+            
+                
+                
+
+                    <button onClick={() => setMostrar(true)} className={styled.ham}>
+
+                        { mostrar ? null : <CgChevronRightR className={styled.icon} /> }
+
+                    </button>
+                
+                  
+            
         
       </div>
 
