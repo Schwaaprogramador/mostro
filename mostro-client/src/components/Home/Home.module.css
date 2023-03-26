@@ -15,6 +15,7 @@
 }
 .img:hover {
     background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .home {
@@ -56,4 +57,9 @@
     font-size: 2rem;
     position: fixed;
     color: aliceblue;
+}
+
+.icon:hover{
+    background-color: black;
+    cursor: pointer;
 }
