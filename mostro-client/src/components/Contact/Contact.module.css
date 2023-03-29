@@ -1,8 +1,39 @@
-.container {
+.form {
+    background-color: black;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 3rem;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-}
+  }
+  
+  .form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form input,
+  .form textarea {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    width: 60%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form button {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .form button:hover {
+    background-color: #005fa3;
+  }
+  

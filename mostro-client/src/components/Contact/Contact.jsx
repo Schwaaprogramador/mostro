@@ -1,22 +1,33 @@
-import React from 'react'
-import styled from './Contact.module.css'
+import React, { useState } from 'react';
+import styles from './Contact.module.css';
 
 function Contact() {
-  return (
-    <div className={styled.container}>
-        <form action="#" method="post">
-          <h2>Contacto</h2>
-          <label for="name">Nombre:</label>
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
-          <input type="text" id="name" name="name" required/>
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required/>
-          <label for="message">Mensaje:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-    </div>
-  )
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Message:', message);
+    // Aquí puedes agregar la lógica para enviar el formulario a través de una API o correo electrónico
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className={styles.form}>
+      <label htmlFor="name">Nombre:</label>
+      <input type="text" id="name" name="name" value={name} onChange={(event) => setName(event.target.value)} required />
+
+      <label htmlFor="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" value={email} onChange={(event) => setEmail(event.target.value)} required />
+
+      <label htmlFor="message">Mensaje:</label>
+      <textarea id="message" name="message" value={message} onChange={(event) => setMessage(event.target.value)} required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  );
 }
 
-export default Contact
+export default Contact;
