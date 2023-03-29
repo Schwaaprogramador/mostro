@@ -3,10 +3,12 @@ import styled from './About.module.css';
 // import Culture from '../../components/Culture/Culture';
 // import { Link } from 'react-scroll';
 import img from '../../assets/img/fondo.jpg';
+import Navbar from '../Navbar/Navbar';
 
 function About() {
   return (
     <div className={styled.container}>
+        <Navbar/>
 {/* 
         <div className={styled.left}>
         <img src={img} alt="medellin" className={styled.img}/>

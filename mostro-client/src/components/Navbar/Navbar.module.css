@@ -35,6 +35,10 @@
     color: aliceblue;
     
 }
+.link:hover {
+    text-decoration: underline;
+    color: aqua;
+}
 
 .img {
     height: 5vh;
