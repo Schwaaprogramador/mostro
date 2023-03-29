@@ -29,7 +29,7 @@ const [mostrar, setMostrar] = useState(false)
         { mostrar ? <Navbar  isOpen= {mostrar} onClose={() => setMostrar(false)} /> : null }
 
 
-      <div className={styled.home}>
+      {/* <div className={styled.home}>
 
             <Animated animationIn="zoomInUp" animationOut="fadeOut" isVisible={true} animationInDuration ='3000'>
                 <div className={styled.buttonContainer}>
@@ -54,7 +54,13 @@ const [mostrar, setMostrar] = useState(false)
                   
             
         
-      </div>
+      </div> */}
+                  <div className={styled.carousel}>
+              <div className={styled.carousel__slide}></div>
+              <div className={styled.carousel__slide}></div>
+              <div className={styled.carousel__slide}></div>
+            </div>
+
 
       <div id='about'>
         <About/>

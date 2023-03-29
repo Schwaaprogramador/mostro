@@ -1,65 +1,44 @@
-.container {
+.carousel {
     height: 100vh;
-    background-image: url('../../assets/img/img2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100%;
-    color: aliceblue;
-    
-    
-}
-
-.img {
-    padding: 1rem;
-    height: 15vh;
-}
-.img:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-}
-
-.home {
-    display: flex;
-    align-items: top;
-    justify-content: center;
-    height: 100vh;
-}
-
-.button {
-    background-color: transparent;
-    border: none;
-    
-}
-
-.buttonContainer {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.ham {
-    position: fixed;
-    background-color: transparent;
+    width: 100vw;
+    position: relative;
+  }
+  
+  .carousel__slide {
     position: absolute;
-    left: 0%;
-    margin: 2rem;
-    border: none;
-    color: aliceblue;
-}
-
-.ham:hover{
-    background-color: black;
-}
-
-.icon {
-    font-size: 2rem;
-    position: fixed;
-    color: aliceblue;
-}
-
-.icon:hover{
-    background-color: black;
-    cursor: pointer;
-}
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    animation: carousel 10s infinite;
+  }
+  
+  .carousel__slide:nth-child(1) {
+    background-image: url('../../assets/img/fondo.jpg');
+  }
+  
+  .carousel__slide:nth-child(2) {
+    background-image: url('../../assets/img/fondo2.jpg');
+  }
+  
+  .carousel__slide:nth-child(3) {
+    background-image: url('../../assets/img/medellin4k.jpg');
+  }
+  
+  @keyframes carousel {
+    0% {
+        background-image: url('../../assets/img/fondo.jpg');
+    }
+    25% {
+        background-image: url('../../assets/img/fondo2.jpg');
+    }
+    75% {
+        background-image: url('../../assets/img/medellin4k.jpg');
+    }
+    100% {
+        background-image: url('../../assets/img/fondo.jpg');
+    }
+  }
+  
