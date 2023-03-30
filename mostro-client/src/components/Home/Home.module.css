@@ -52,10 +52,11 @@
     font-size: 2rem;
     position: fixed;
     color: aliceblue;
+    border-radius: 25%;
 }
 
 .icon:hover{
-    background-color: rgb(56, 169, 56);
+    background-color: rgb(12, 115, 133);
     cursor: pointer;
 } 
 

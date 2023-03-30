@@ -36,8 +36,9 @@
     
 }
 .link:hover {
-    text-decoration: underline;
+   
     color: aqua;
+    
 }
 
 .img {
