@@ -8,11 +8,21 @@ import Navbar from '../Navbar/Navbar';
   // import Contact from '../Contact/Contact';
 import { Animated } from "react-animated-css";
 import { CgChevronRightR } from "react-icons/cg";
+import {useSelector, useDispatch  } from "react-redux";
+import {
+  showNavbar,
+  closeNavbar,
+} from '../../redux/navbarSlice.js'; 
+
+
+
 
 function Home() {
 
 //------Logica para navbar lateral--
-const [mostrar, setMostrar] = useState(false)
+// const [mostrar, setMostrar] = useState(false)//
+  const navbarShow = useSelector(state => state.navbarStatus);
+  const dispatch = useDispatch();
 
 //--------------- Ejcutar un boton con un onClick para que lleve al top de la pagina-----
 // const scrollToTop = () => {
@@ -22,18 +32,20 @@ const [mostrar, setMostrar] = useState(false)
 //   });
 // };
 
+console.log(navbarShow.status)
 
   return (
     <div className={styled.container}>
 
-        { mostrar ? <Navbar  isOpen= {mostrar} onClose={() => setMostrar(false)} /> : null }
+        { navbarShow.status ? <Navbar/> : null }
 
 
           <div className={styled.home}>
 
-                <Animated animationIn="zoomInUp" animationOut="fadeOut" isVisible={true} animationInDuration ='3000'>
+                <Animated animationIn="zoomInUp" animationOut="fadeOut" isVisible={true} animationInDuration = { 3000 }>
                     <div className={styled.buttonContainer}>
-                        <button onClick={() => setMostrar(true)}  className={styled.button}>
+                      
+                        <button onClick={() => dispatch(showNavbar())}  className={styled.button}>
                 
                           <img src={logo} alt="logo" className={styled.img}/>
               
@@ -41,10 +53,10 @@ const [mostrar, setMostrar] = useState(false)
                     </div>
                 </Animated>
 
-                        <button onClick={() => setMostrar(true)} className={styled.ham}>
+                        <button onClick={() => dispatch(showNavbar())} className={styled.ham}>
 
-                            { mostrar ? null : <CgChevronRightR className={styled.icon} /> }
-
+                            { navbarShow.status ? null : <CgChevronRightR className={styled.icon} /> }
+                              
                         </button>
  
           </div>

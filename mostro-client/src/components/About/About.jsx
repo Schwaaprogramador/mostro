@@ -1,14 +1,35 @@
+//IMPORTS
 import React from 'react';
-import styled from './About.module.css';
-// import Culture from '../../components/Culture/Culture';
-// import { Link } from 'react-scroll';
-import img from '../../assets/img/fondo.jpg';
 import Navbar from '../Navbar/Navbar';
+import styled from './About.module.css';
+import {useSelector, useDispatch  } from "react-redux";
+import { useEffect } from 'react';
+import { showNavbar, closeNavbar } from '../../redux/navbarSlice.js'; 
+import { CgChevronRightR } from "react-icons/cg";
 
+//COMPONENTE----------
 function About() {
+  const dispatch = useDispatch();
+  const navbarShow = useSelector(state => state.navbarStatus);
+
+  useEffect(()=>{
+    dispatch(closeNavbar());
+    
+  },[dispatch]);
+
+
+
+
   return (
     <div className={styled.container}>
-        <Navbar/>
+
+      { navbarShow.status ? <Navbar/> : null }
+                        <button onClick={() => dispatch(showNavbar())} className={styled.ham}>
+
+                            { navbarShow.status ? null : <CgChevronRightR className={styled.icon} /> }
+                              
+                        </button>
+        
 {/* 
         <div className={styled.left}>
         <img src={img} alt="medellin" className={styled.img}/>
