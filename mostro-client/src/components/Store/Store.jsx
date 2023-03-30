@@ -48,9 +48,18 @@ function Store() {
           </div>
         </div>
 
-        <div className={styled.img2}>
-          <div className={styled.imgInfo}>
-            <h3><span>Camisa</span> Chimbera pa parchar</h3>
+        <div className={styled.img2ejemplo}>
+
+          <div className={styled.img2}>
+            
+          </div>
+          <div className={styled.text}>
+              <h3>Camisa Chimbera</h3>
+                <div>
+                  <p>Talla: La que le sirve</p>
+                  <p>Precio: cuanto tiene</p>
+                </div>  
+
           </div>
         </div>
    

@@ -1,6 +1,6 @@
 .container {
     
-    background-image: url('../../assets/img/fondo2.jpg');
+    background-image: url('../../assets/img/fondo3.jpg');
     background-color: rgba(0, 0, 0, 0.288);
     background-size: cover;
     background-position: center;
@@ -41,6 +41,20 @@
     color: aliceblue;
     border-radius: 2rem;
 
+}
+
+.img2ejemplo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.text {
+    background-color: rgba(0, 0, 0, 0.797);
+    padding: 2rem;
+    border-radius: 2rem;
 }
 
 
