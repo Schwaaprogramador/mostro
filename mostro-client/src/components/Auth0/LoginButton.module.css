@@ -1,0 +1,14 @@
+
+
+.button {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    right: 0%;
+    margin: 2rem;
+    color: aliceblue;
+    padding: 0.5rem;
+  }
+
+  .button:hover{
+    background-color: rgba(15, 208, 233, 0.6);
+}

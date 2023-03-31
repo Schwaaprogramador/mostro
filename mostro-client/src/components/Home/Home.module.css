@@ -3,7 +3,7 @@
       background-image: url('../../assets/img/fondo2.jpg');
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: 100%;
+      background-position: 50%;
       color: aliceblue;
       animation: carousel 10s infinite;
   }
@@ -48,6 +48,12 @@
     background-color: black;
 }
 
+.entrar {
+    color: aliceblue;
+    padding: 0.5rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.655);
+}
 .icon {
     font-size: 2rem;
     position: fixed;
@@ -62,23 +68,19 @@
 
 @keyframes carousel {
   0% {
-      background-image: url('../../assets/img/fondo.jpg');
-      background-size: cover;
-      background-position: 100%;
+      background-image: url('../../assets/img/fondo2.jpg');
+      
   }
   25% {
-    background-image: url('../../assets/img/medellin4k.jpg');
-      background-size: cover;
-      background-position: 100%;
+    background-image: url('../../assets/img/fondo3.jpg');
+     
   }
   75% {
-      background-image: url('../../assets/img/fondo.jpg');
-      background-size: cover;
-      background-position: 100%;
+      background-image: url('../../assets/img/medellin4k.jpg');
+     
   }
   100% {
-      background-image: url('../../assets/img/medellin4k.jpg');
-      background-size: cover;
-      background-position: 100%;
+      background-image: url('../../assets/img/fondo.jpg');
+      
   }
 }

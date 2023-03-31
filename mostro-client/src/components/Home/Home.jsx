@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from './Home.module.css';
 import logo from '../../assets/img/logo.svg';
 import Navbar from '../Navbar/Navbar';
@@ -7,12 +7,15 @@ import Navbar from '../Navbar/Navbar';
   // import Store from '../Store/Store';
   // import Contact from '../Contact/Contact';
 import { Animated } from "react-animated-css";
-import { CgChevronRightR } from "react-icons/cg";
+// import { CgChevronRightR } from "react-icons/cg";
 import {useSelector, useDispatch  } from "react-redux";
 import {
   showNavbar,
-  closeNavbar,
-} from '../../redux/navbarSlice.js'; 
+  
+} from '../../redux/navbarSlice.js';
+import LoginButton from '../Auth0/LoginButton';
+
+
 
 
 
@@ -23,6 +26,8 @@ function Home() {
 // const [mostrar, setMostrar] = useState(false)//
   const navbarShow = useSelector(state => state.navbarStatus);
   const dispatch = useDispatch();
+  
+  
 
 //--------------- Ejcutar un boton con un onClick para que lleve al top de la pagina-----
 // const scrollToTop = () => {
@@ -38,7 +43,7 @@ console.log(navbarShow.status)
     <div className={styled.container}>
 
         { navbarShow.status ? <Navbar/> : null }
-
+        <LoginButton/>
 
           <div className={styled.home}>
 
@@ -55,7 +60,7 @@ console.log(navbarShow.status)
 
                         <button onClick={() => dispatch(showNavbar())} className={styled.ham}>
 
-                            { navbarShow.status ? null : <CgChevronRightR className={styled.icon} /> }
+                            { navbarShow.status ? null : <h2 className={styled.entrar}>Entrar</h2>  }
                               
                         </button>
  
