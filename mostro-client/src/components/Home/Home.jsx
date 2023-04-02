@@ -9,10 +9,7 @@ import Navbar from '../Navbar/Navbar';
 import { Animated } from "react-animated-css";
 import { CiMenuBurger } from "react-icons/ci";
 import {useSelector, useDispatch  } from "react-redux";
-import {
-  showNavbar,
-  
-} from '../../redux/navbarSlice.js';
+import { showNavbar } from '../../redux/navbarSlice.js';
 import LoginButton from '../Auth0/LoginButton';
 
 

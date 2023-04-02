@@ -27,14 +27,14 @@ function Navbar() {
                  
                     <Profile/>
 
-                    <div className={styled.enlaces}>
+                    
    
-                      <Link to="/about" className={styled.link}> Tienda </Link>
-                      <Link to="/culture" className={styled.link}> Mostro </Link>
+                      <Link to="/store" className={styled.link}> Tienda </Link>
+                      <Link to="/about" className={styled.link}> Mostro </Link>
                       <Link to="/store" className={styled.link}> Cultura </Link>
                       <Link to="/contact"  className={styled.link}> Registros </Link>
 
-                    </div>
+                    
 
 
             </nav>

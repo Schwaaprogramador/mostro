@@ -3,22 +3,41 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    top: 0%;
     color: aliceblue;
     position: absolute;
-    top: 20%;
     left: 0%;
     padding: 3rem;
-    margin: 2rem;
+    height: 100%;
+    width: 30vw;
     
 }
 
+
+
+/* ---------------ENLACES------------- */
 .enlaces{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    margin-top: 5rem;
     gap: 3rem;
+    background-color: black;
 }
+
+.link {
+    margin: 2rem;
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+
+.link:hover {
+    border-bottom: 0.2px solid #ffffff;
+    color: rgb(0, 255, 208);
+}
+
+
+
 
 
 .button {
@@ -29,20 +48,14 @@
     color: aliceblue;
     
 }
+
+
 .button:hover {
     cursor: pointer;
     color: aliceblue;
 }
 
-.link {
-    text-decoration: none;
-    color: aliceblue;
-    
-}
 
-.link:hover {
-    border-bottom: 0.2px solid #ffffff;
-}
 
 .img {
     height: 5vh;
@@ -51,6 +64,7 @@
 }
 
 .closeIcon {
+    margin: 1rem;
     position: absolute;
     right: 0%;
     top: 0%;

@@ -2,16 +2,21 @@
     height: 100vh;
     background-color: rgb(255, 255, 255);
     color: black;
+    font-family: 'Montserrat', sans-serif;
 }
 .header {
     margin: 5px;
-    border-top: 1px solid rgba(92, 91, 91, 0.847);;
-    border-bottom: 1px solid rgba(92, 91, 91, 0.847);
+    border-top: 0.5px solid rgba(92, 91, 91, 0.847);;
+    border-bottom: 0.5px solid rgba(92, 91, 91, 0.847);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
 }
+
+
+
+
 
 /* --------------LOGO------------------- */
 
@@ -23,6 +28,8 @@
 .img:hover {
     cursor: pointer;
 }
+
+
 
 
 
@@ -39,4 +46,64 @@
 .ham:hover{
     cursor: pointer;
     
+}
+
+
+
+
+
+/* ---------------FILTERS--------------- */
+
+.filters {
+    gap: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 0.5px solid rgba(92, 91, 91, 0.847);
+    
+}
+
+.filter {
+    display: flex;
+    gap: 6px;
+}
+
+
+
+
+
+
+/* ----------------------clothes----------------------- */
+
+.clothes {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 0.5px solid rgba(92, 91, 91, 0.847);
+    margin: 5px;
+}
+
+.info {
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding: 10px;  
+}
+
+.prenda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    width: 300px;
+    padding: 2rem;
+    gap: 15px;
+    
+}
+
+.clothesImg2 {
+    height: 400px;
+   
 }
