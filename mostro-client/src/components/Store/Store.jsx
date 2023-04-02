@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { showNavbar, closeNavbar } from '../../redux/navbarSlice.js'; 
 import logo from '../../assets/img/logonegro.svg';
 import { CiMenuBurger } from "react-icons/ci";
+import { CiShoppingCart } from "react-icons/ci";
 import camisa from '../../assets/fotos/camisanegraFront.jpg';
 import camisa2 from '../../assets/fotos/camisanegraamarillaFront.jpg';
 import camisa3 from '../../assets/fotos/camisaazulFront.jpg';
@@ -30,6 +31,8 @@ function Store() {
 
     {/* ------------------------HEADER------------------------- */}
       <div className={styled.header}>
+
+          {/* ------------------------Menu Hamburguesa------------------------- */}
         <div>
           <button onClick={() => dispatch(showNavbar())} className={styled.ham}>
 
@@ -38,8 +41,14 @@ function Store() {
             </button>
         </div>
 
-        <div> <img src={logo} alt="logo" className={styled.img}/> </div>
-        <div> <p>Buscar</p></div>
+          {/* ------------------------LOGO------------------------- */}
+        <div> 
+          <img src={logo} alt="logo" className={styled.img}/> 
+        </div>
+
+
+          {/* ------------------------CARRITO------------------------- */}
+        <div className={styled.carrito}> <CiShoppingCart className={styled.carrito} /> </div>
       </div>
 
       

@@ -4,10 +4,14 @@
     color: black;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+/* --------------HEADER------------------- */
 .header {
     margin: 5px;
-    border-top: 0.5px solid rgba(92, 91, 91, 0.847);;
-    border-bottom: 0.5px solid rgba(92, 91, 91, 0.847);
+    width: auto;
+    border-top: 0.5px solid rgba(162, 161, 161, 0.666);
+    border-bottom: 0.5px solid rgba(162, 161, 161, 0.666);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +64,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    border-bottom: 0.5px solid rgba(92, 91, 91, 0.847);
+    border-bottom: 0.5px solid rgba(162, 161, 161, 0.666);
     
 }
 
@@ -106,4 +110,8 @@
 .clothesImg2 {
     height: 400px;
    
+}
+
+.carrito {
+    font-size: 2rem;
 }
