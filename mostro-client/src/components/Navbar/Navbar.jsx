@@ -2,13 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from './Navbar.module.css';  
 // import { Link } from 'react-scroll';
-import { ImCross } from 'react-icons/im';
-import { BiHomeAlt2 } from 'react-icons/bi';
-// import { CgProfile } from 'react-icons/cg';
+import { IoClose } from 'react-icons/io5';
 import { closeNavbar } from '../../redux/navbarSlice.js';
 import { useDispatch  } from "react-redux";
 import Profile from '../Auth0/Profile';
-import LogoutButton from '../Auth0/LogoutButton';
 
 
 function Navbar() {
@@ -18,40 +15,27 @@ function Navbar() {
   return (
     <>
             <nav className={styled.navbar}>
-                 
+
+                  <div className={styled.closeIcon}>
+                      
+                      <button className={styled.button} onClick={()=> dispatch(closeNavbar())}>
+
+                        <IoClose/>
+
+                      </button>
+                  </div>
                  
                     <Profile/>
-                    <LogoutButton/>
-
-                
-                    
 
                     <div className={styled.enlaces}>
-                    
-                      <Link to="/" smooth={true} className={styled.home}> <BiHomeAlt2/> </Link>
-                      <Link to="/about" smooth={true} className={styled.link}> About </Link>
-                      <Link to="/culture" smooth={true} className={styled.link}> Culture </Link>
-                      <Link to="/store" smooth={true} className={styled.link}> Store </Link>
-                      <Link to="/contact" smooth={true} className={styled.link}> Contact</Link>
-                      
-                      
-                      
+   
+                      <Link to="/about" className={styled.link}> Tienda </Link>
+                      <Link to="/culture" className={styled.link}> Mostro </Link>
+                      <Link to="/store" className={styled.link}> Cultura </Link>
+                      <Link to="/contact"  className={styled.link}> Registros </Link>
 
                     </div>
 
-                    <div className={styled.closeIcon}>
-                      
-                        <button className={styled.button} onClick={()=> dispatch(closeNavbar())}>
-
-                          <ImCross/>
-
-                        </button>
-                    </div>
-                    
-
-
-                 
-                    
 
             </nav>
     </>

@@ -5,19 +5,14 @@
     align-items: center;
     justify-content: center;
     color: aliceblue;
-    position: fixed;
+    position: absolute;
+    top: 20%;
     left: 0%;
-    padding: 2rem;
-    margin: 1rem;
+    padding: 3rem;
+    margin: 2rem;
+    
 }
 
-.info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
 .enlaces{
     display: flex;
     flex-direction: column;
@@ -25,21 +20,18 @@
     gap: 3rem;
 }
 
-.closeIcon {
-   margin: 10px;
-}
 
 .button {
     
-   
+    font-size: 1.5rem;
     background-color: transparent;
     border: none;
     color: aliceblue;
     
 }
 .button:hover {
-    background-color: rgb(232, 6, 6);
     cursor: pointer;
+    color: aliceblue;
 }
 
 .link {
@@ -47,25 +39,19 @@
     color: aliceblue;
     
 }
-.home {
-    text-decoration: none;
-    color: aliceblue;
-    padding: 5px;
 
-}
-.home:hover{
-    color: aqua;
-    
-
-}
 .link:hover {
-   
-    color: aqua;
-    
+    border-bottom: 0.2px solid #ffffff;
 }
 
 .img {
     height: 5vh;
     padding: 0;
     margin: 0;
+}
+
+.closeIcon {
+    position: absolute;
+    right: 0%;
+    top: 0%;
 }
