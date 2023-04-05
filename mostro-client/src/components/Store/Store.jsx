@@ -5,7 +5,7 @@ import {useSelector, useDispatch  } from "react-redux";
 import { useEffect } from 'react';
 import { showNavbar, closeNavbar } from '../../redux/navbarSlice.js'; 
 import logo from '../../assets/img/logonegro.svg';
-import { CiMenuBurger } from "react-icons/ci";
+import { FaHamburger } from "react-icons/fa";
 import { CiShoppingCart } from "react-icons/ci";
 import camisa from '../../assets/fotos/camisanegraFront.jpg';
 import camisa2 from '../../assets/fotos/camisanegraamarillaFront.jpg';
@@ -36,7 +36,7 @@ function Store() {
         <div>
           <button onClick={() => dispatch(showNavbar())} className={styled.ham}>
 
-            { navbarShow.status ? null :  <CiMenuBurger/>  }
+            { navbarShow.status ? null :  <FaHamburger/>  }
               
             </button>
         </div>

@@ -7,7 +7,7 @@ import Navbar from '../Navbar/Navbar';
   // import Store from '../Store/Store';
   // import Contact from '../Contact/Contact';
 import { Animated } from "react-animated-css";
-import { CiMenuBurger } from "react-icons/ci";
+import { FaHamburger } from "react-icons/fa";
 import {useSelector, useDispatch  } from "react-redux";
 import { showNavbar } from '../../redux/navbarSlice.js';
 import LoginButton from '../Auth0/LoginButton';
@@ -57,7 +57,7 @@ console.log(navbarShow.status)
 
                         <button onClick={() => dispatch(showNavbar())} className={styled.ham}>
 
-                            { navbarShow.status ? null :  <CiMenuBurger/>  }
+                            { navbarShow.status ? null :  <FaHamburger/>  }
                               
                         </button>
  
