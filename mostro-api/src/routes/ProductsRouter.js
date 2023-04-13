@@ -4,6 +4,9 @@ const { Product } = require('../db.js');
 
 const productRouter = Router();
 
+
+    //---------------RUTA GET------------------//
+
 productRouter.get('/', async (req, res) => {
     const { name } = req.query;
   const allProducts = await Product.findAll();
@@ -31,7 +34,7 @@ productRouter.get('/', async (req, res) => {
     productRouter.post("/", async (req, res) => {
     
         try {
-          const { name, description, price, image, size, genre, category } = req.body;
+          const { name, description, price, image, size, genre, category, color } = req.body;
           const newProduct = await Product.create({
             name,
             description,
@@ -40,6 +43,7 @@ productRouter.get('/', async (req, res) => {
             size,
             genre,
             category,
+            color,
           });
           res.status(201).json(newProduct);
         } catch (error) {

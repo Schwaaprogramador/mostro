@@ -32,7 +32,7 @@ function Navbar() {
                       <Link to="/store" className={styled.link}> Tienda </Link>
                       <Link to="/about" className={styled.link}> Mostro </Link>
                       <Link to="/store" className={styled.link}> Cultura </Link>
-                      <Link to="/contact"  className={styled.link}> Registros </Link>
+                      <Link to="/contact"  className={styled.link}> Agregar Camisa </Link>
 
                     
 

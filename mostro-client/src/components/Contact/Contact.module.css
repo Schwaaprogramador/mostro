@@ -8,13 +8,15 @@
     height: 100vh;
   }
   
-  .form label {
+  .label {
+    color: #ccc;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
   
-  .form input,
-  .form textarea {
+  .input,
+  .textarea {
+   
     padding: 0.5rem;
     border-radius: 0.25rem;
     border: 1px solid #ccc;
@@ -23,7 +25,7 @@
     margin-bottom: 1rem;
   }
   
-  .form button {
+  .button {
     background-color: #0077cc;
     color: #fff;
     padding: 0.5rem 1rem;
@@ -33,7 +35,7 @@
     cursor: pointer;
   }
   
-  .form button:hover {
+  .button:hover {
     background-color: #005fa3;
   }
   

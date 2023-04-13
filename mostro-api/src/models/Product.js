@@ -23,7 +23,7 @@ module.exports = (sequelize) => {
 				allowNull: false,
 			},
 			image: {
-				type: DataTypes.STRING,
+				type: DataTypes.BLOB,
 				allowNull: false,
 			},
 			size: {
@@ -32,9 +32,13 @@ module.exports = (sequelize) => {
 			},
 			genre: {
 				type: DataTypes.STRING,
-				allowNull: false,
+				allowNull: true,
 			},
 			category: {
+				type: DataTypes.STRING,
+				allowNull: true,
+			},
+			color: {
 				type: DataTypes.STRING,
 				allowNull: false,
 			},
