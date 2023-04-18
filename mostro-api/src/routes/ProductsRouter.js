@@ -19,8 +19,8 @@ productRouter.get('/', async (req, res) => {
         ? res.status(200).json(product)
         : res.send("Product not found");
     } else {
-      const products = allProducts;
-      return res.status(200).send(products);
+      allProducts;
+      return res.status(200).send(allProducts);
     }
   } catch (error) {
     res.status(400).send(error);

@@ -12,16 +12,21 @@ import camisa2 from '../../assets/fotos/camisanegraamarillaFront.jpg';
 import camisa3 from '../../assets/fotos/camisaazulFront.jpg';
 import camisa4 from '../../assets/fotos/camisablancaFront.jpg';
 import camisa5 from '../../assets/fotos/camisablancanaranjaFront.jpg';
+import { getProducts } from '../../redux/productFetch';
+
 
 function Store() {
 
   const dispatch = useDispatch();
   const navbarShow = useSelector(state => state.navbarStatus);
-
+  const products = useSelector(state=> state.products);
   useEffect(()=>{
     dispatch(closeNavbar());
-    
+    dispatch(getProducts());
   },[dispatch]);
+
+
+  console.log(products)
   
 
   return (
