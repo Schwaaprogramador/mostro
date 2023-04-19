@@ -8,31 +8,30 @@
     position: fixed;
     left: 0%;
     height: 100vh;
-    width: 30vw;
+    
     
 }
 
 
 
 /* ---------------ENLACES------------- */
-.enlaces{
+
+
+.enlaces {
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
-    gap: 3rem;
-    background-color: black;
+    margin: 4rem;
 }
-
 .link {
-    margin: 2rem;
+    margin: 0.5rem;
     text-decoration: none;
     color: aliceblue;
     
 }
 
 .link:hover {
-    border-bottom: 0.2px solid #ffffff;
-    color: rgb(0, 255, 208);
+    border-bottom: 0.1px solid #ffffff;
+    
 }
 
 
@@ -51,7 +50,7 @@
 
 .button:hover {
     cursor: pointer;
-    color: aliceblue;
+    color: rgb(255, 0, 0);
 }
 
 

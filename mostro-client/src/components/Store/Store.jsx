@@ -5,8 +5,8 @@ import {useSelector, useDispatch  } from "react-redux";
 import { useEffect } from 'react';
 import { showNavbar, closeNavbar } from '../../redux/navbarSlice.js'; 
 import logo from '../../assets/img/logonegro.svg';
-import { FaHamburger } from "react-icons/fa";
 import { CiShoppingCart } from "react-icons/ci";
+import { CiMenuBurger } from "react-icons/ci";
 import camisa from '../../assets/fotos/camisanegraFront.jpg';
 import camisa2 from '../../assets/fotos/camisanegraamarillaFront.jpg';
 import camisa3 from '../../assets/fotos/camisaazulFront.jpg';
@@ -32,7 +32,11 @@ function Store() {
   return (
     <div className={styled.container}>
 
+      {/* ------------------------BARRA DE NAVEGACION------------------------- */}
+
       { navbarShow.status ? <Navbar/> : null }
+
+
 
     {/* ------------------------HEADER------------------------- */}
       <div className={styled.header}>
@@ -41,10 +45,13 @@ function Store() {
         <div>
           <button onClick={() => dispatch(showNavbar())} className={styled.ham}>
 
-            { navbarShow.status ? null :  <FaHamburger/>  }
+            { navbarShow.status ? null :  <CiMenuBurger/>  }
               
             </button>
         </div>
+
+
+
 
           {/* ------------------------LOGO------------------------- */}
         <div> 
@@ -52,44 +59,15 @@ function Store() {
         </div>
 
 
+
           {/* ------------------------CARRITO------------------------- */}
         <div className={styled.carrito}> <CiShoppingCart className={styled.carrito} /> </div>
       </div>
 
-      
-      
-    {/* ------------------------FILTERS------------------------- */}
-      <section className={styled.filters}>
-        
-        <div className={styled.filter}>
-            <p>Genero</p>
-            <select>
-              <option>Hombre</option>
-              <option>Mujer</option>
-            </select>
-        </div>
+    
 
-        <div className={styled.filter}>
-            <p>Talla</p>
-            <select>
-              <option>S</option>
-              <option>M</option>
-              <option>L</option>
-              <option>XL</option>
-            </select>
-        </div>
 
-        <div className={styled.filter}>
-          <p>Prendas</p>
-          <select>
-            <option>Camisa</option>
-            <option>Buso</option>
-            <option>Gorro</option>
-            <option>Camiseta</option>
-          </select>
-        </div>
 
-      </section>
 
     {/* ------------------------CLOTHES------------------------- */}
       <section className={styled.clothes}>

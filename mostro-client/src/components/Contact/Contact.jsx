@@ -1,12 +1,25 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import styles from './Contact.module.css';
+import { postProducts } from "../../redux/productFetch";
 
+
+
+
+
+
+
+//--------COMPONENTE------------
 function Contact() {
+
+
+  const dispatch = useDispatch();
+
   const [inputs, setInputs] = useState({
     name: '', 
     description: '', 
     price:"",
-
+    image:"",
     size:"",
     genre:"", 
     category:"", 
@@ -14,27 +27,34 @@ function Contact() {
     
 });
 
-const [file, setFile] = useState(null);
+
+
+
+
+//---------HANDLES-----------------------------------
+const handleSubmit =  (evento) => {
+
+    evento.preventDefault();
+    dispatch(postProducts(inputs));
+
+}
+
+const handleInputs = (evento) => {
+
+  setInputs({
+      
+      ...inputs,
+      [evento.target.name]: evento.target.value, 
+  })
+
+}
+
 
   
 
-
-  //------------------------IMAGEN INPUT LOGICAS--------------------------
-  const handleFileInputChange = (event) => {
-    setFile(event.target.files[0]);
-  }
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault();
-
-  //   // Crear un nuevo usuario con la imagen cargada en el formulario
-  //   const formData = new FormData();
-  //   formData.append('avatar', file);
-  //   const newUser = await User.create(formData);
-  // }
-
   return (
     <>
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={handleSubmit}>
 
 
 
@@ -42,11 +62,11 @@ const [file, setFile] = useState(null);
 
             {/* ---------------------INPUT NAME---------------- */}
 
-            <label htmlFor="name" className={styles.label}>Nombre: </label>
+            <label className={styles.label}>Nombre: </label>
               <input 
                     type="text" 
                     className={styles.input}  
-                    id="name" 
+                    onChange={handleInputs}
                     name="name" 
                     value={inputs.name} 
                      
@@ -61,11 +81,12 @@ const [file, setFile] = useState(null);
 
             {/* ---------------------INPUT Descripcion---------------- */}
 
-            <label htmlFor="email" className={styles.label}>DescripTion:</label>
+            <label  className={styles.label}>DescripTion:</label>
             <input 
-                    type="email" 
+                    type="text" 
                     className={styles.input} 
-                    id="email" name="email" 
+                    onChange={handleInputs}
+                    name="description" 
                     value={inputs.description} 
                     />
 
@@ -80,12 +101,12 @@ const [file, setFile] = useState(null);
 
             {/* ---------------------INPUT Price---------------- */}
 
-            <label htmlFor="email" className={styles.label}>Price:</label>
+            <label  className={styles.label}>Price:</label>
             <input 
-                  type="email" 
+                  type="text" 
                   className={styles.input} 
-                  id="email" 
-                  name="email" 
+                  onChange={handleInputs}
+                  name="price" 
                   value={inputs.price} 
                   />
 
@@ -101,13 +122,12 @@ const [file, setFile] = useState(null);
 
             {/* ---------------------INPUT Image---------------- */}
 
-            <label htmlFor="email" className={styles.label}>Image:</label>
+            <label className={styles.label}>Image:</label>
             <input  
-                  type="file" 
+                  type="text" 
                   className={styles.input} 
-                  id="email" 
                   name="image" 
-                  onChange={handleFileInputChange} 
+                  onChange={handleInputs}
                    />
             
             
@@ -121,7 +141,7 @@ const [file, setFile] = useState(null);
 
 
             {/* ---------------------INPUT Size---------------- */}
-            <label htmlFor="email" className={styles.label}>Size:</label>
+            <label  className={styles.label}>Size:</label>
                     <select className={styles.input}>
                         <option value={inputs.size} >S</option>
                         <option value={inputs.size}>M</option>
@@ -136,7 +156,7 @@ const [file, setFile] = useState(null);
 
 
             {/* ---------------------INPUT Genre---------------- */}
-            <label htmlFor="email" className={styles.label}>Genre:</label>
+            <label  className={styles.label}>Genre:</label>
                     <select className={styles.input}> 
                         <option value={inputs.genre}></option>
                         <option value={inputs.genre}>MASCULINO</option>
@@ -155,7 +175,7 @@ const [file, setFile] = useState(null);
 
 
             {/* ---------------------INPUT Category---------------- */}
-            <label htmlFor="email" className={styles.label}>Category:</label>
+            <label  className={styles.label}>Category:</label>
                     <select className={styles.input}>
                         <option value={inputs.category}></option>
                         <option value={inputs.category}>BUSO</option>

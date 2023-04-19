@@ -7,10 +7,10 @@ import Navbar from '../Navbar/Navbar';
   // import Store from '../Store/Store';
   // import Contact from '../Contact/Contact';
 import { Animated } from "react-animated-css";
-import { FaHamburger } from "react-icons/fa";
+import { CiMenuBurger } from "react-icons/ci";
 import {useSelector, useDispatch  } from "react-redux";
 import { showNavbar } from '../../redux/navbarSlice.js';
-import LoginButton from '../Auth0/LoginButton';
+// import LoginButton from '../Auth0/LoginButton';
 
 
 
@@ -40,7 +40,7 @@ console.log(navbarShow.status)
     <div className={styled.container}>
 
         { navbarShow.status ? <Navbar/> : null }
-        <LoginButton/>
+        
 
           <div className={styled.home}>
 
@@ -57,7 +57,7 @@ console.log(navbarShow.status)
 
                         <button onClick={() => dispatch(showNavbar())} className={styled.ham}>
 
-                            { navbarShow.status ? null :  <FaHamburger/>  }
+                            { navbarShow.status ? null :  <CiMenuBurger/>  }
                               
                         </button>
  

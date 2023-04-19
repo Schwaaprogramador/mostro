@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     products:[],
+    postProducts:'',
 }
 
 
@@ -13,9 +14,12 @@ export const productSlice = createSlice({
         
         getProduct: (state, action)=> {
             state.products = action.payload
+        },
+        postProduct: (state, action) => {
+            state.postProducts = action.payload
         }
     }
 })
-export const { getProduct } = productSlice.actions;
+export const { getProduct, postProduct } = productSlice.actions;
 
 export default productSlice.reducer;

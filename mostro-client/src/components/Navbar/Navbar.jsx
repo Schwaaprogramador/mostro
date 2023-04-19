@@ -5,7 +5,6 @@ import styled from './Navbar.module.css';
 import { IoClose } from 'react-icons/io5';
 import { closeNavbar } from '../../redux/navbarSlice.js';
 import { useDispatch  } from "react-redux";
-import Profile from '../Auth0/Profile';
 
 
 function Navbar() {
@@ -23,16 +22,23 @@ function Navbar() {
                         <IoClose/>
 
                       </button>
+
                   </div>
                  
-                    <Profile/>
-
                     
+
+                    <div className={styled.enlaces}>
+
+                      <Link to="/store" className={styled.link}> TIENDA </Link>
+                      <Link to="/store" className={styled.link}> NUEVA COLECCION </Link>
+                      <Link to="/about" className={styled.link}> CULTURA </Link>
+                      <Link to="/store" className={styled.link}> GALERIA </Link>
+                      <Link to="/contact"  className={styled.link}> MOSTRO </Link>
+
+
+                    </div>
    
-                      <Link to="/store" className={styled.link}> Tienda </Link>
-                      <Link to="/about" className={styled.link}> Mostro </Link>
-                      <Link to="/store" className={styled.link}> Cultura </Link>
-                      <Link to="/contact"  className={styled.link}> Agregar Camisa </Link>
+                      
 
                     
 
