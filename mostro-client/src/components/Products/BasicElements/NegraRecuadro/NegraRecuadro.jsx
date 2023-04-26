@@ -63,7 +63,7 @@ function NegraRecuadro() {
                                 </div>
 
                                 <div className={styled.datalle}>
-                                    <div className={styled.datalle}>Detalles de la prenda</div>
+                                    <div className={styled.datalleTitulo}>Detalles de la prenda</div>
                                     <p className={styled.datalle}>Elaborada en tela licra algodón
                                         color negro, con aplique en 
                                         papel foil color tornasol.</p>
@@ -88,6 +88,7 @@ function NegraRecuadro() {
 
                     {/* ----------------------CARACTERISTICAS------------ */}
                         <div className={styled.caracteristicas}>
+
                             <div className={styled.caracter}>Elige el color</div>
                             <div className={styled.colorNegro}></div>
 
@@ -100,7 +101,7 @@ function NegraRecuadro() {
                                 <div className={styled.talla}>XXL</div>
                             </div>
 
-                            <button>AGREGAR A LA BOLSA</button>
+                            <button className={styled.button}>AGREGAR A LA BOLSA</button>
 
                         </div>
 

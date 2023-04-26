@@ -9,9 +9,12 @@
 
 /*---------CONTENIDO DEBAJO DEL HEADER----------*/
 .product {
-    margin-top: 3rem;
+
+    padding-left: 3rem;
+    padding-top: 4rem;
+    margin-left: 5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     
 }
 
@@ -51,7 +54,6 @@
 /*-----------CARACTERISTICAS-----------*/
 .caracteristicas {
     padding: 3rem;
-    
     width: 30vw;
 }
 
@@ -59,8 +61,8 @@
     margin: 1rem;
     border-radius: 100%;
     background-color: black;
-    width: 24px;
-    height: 24px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .caracter {
@@ -82,4 +84,23 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
+}
+
+.talla:hover {
+    background-color: rgba(0, 0, 0, 0.405);
+    color: aliceblue;
+}
+
+.button {
+    margin-top: 2rem;
+    width: 28vw;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.405);
+    color: aliceblue;
 }
