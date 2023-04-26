@@ -1,0 +1,85 @@
+/*-------------CONTENIDO TOTAL DEL COMPONENTE-------------*/
+.container {
+    
+    
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*---------CONTENIDO DEBAJO DEL HEADER----------*/
+.product {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/*---------------------INFO---------------*/
+
+.info {
+    width: 20vw;
+    padding: 3rem;
+    gap: 4rem;
+
+}
+
+.datalle {
+    padding-top: 2rem;
+}
+
+.datalleTitulo {
+    font-weight: bold;
+}
+
+
+
+
+
+/*----------------------IMAGENES--------------*/
+
+.imagenes {
+    width: 30vw;
+}
+
+.img {
+    width: 30vw;
+}
+
+
+
+/*-----------CARACTERISTICAS-----------*/
+.caracteristicas {
+    padding: 3rem;
+    
+    width: 30vw;
+}
+
+.colorNegro {
+    margin: 1rem;
+    border-radius: 100%;
+    background-color: black;
+    width: 24px;
+    height: 24px;
+}
+
+.caracter {
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+.tallas {
+    display: flex;
+}
+
+.talla {
+    margin: 1rem;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}

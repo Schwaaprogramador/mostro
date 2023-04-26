@@ -8,6 +8,7 @@ import Contact from "./components/Contact/Contact";
 
 //---DEPENDENCIAS----
 import { Route, Routes } from "react-router-dom";
+import NegraRecuadro from "./components/Products/BasicElements/NegraRecuadro/NegraRecuadro";
 
 
 function App() {
@@ -25,6 +26,11 @@ function App() {
 
 
           {/* ----------------RUTAS VISTAS CAMISAS--------------------- */}
+          <Route exact path="/negrarecuadro" element={<NegraRecuadro/>} />
+
+
+
+
           
         </Routes>
       

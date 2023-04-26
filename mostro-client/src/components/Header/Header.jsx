@@ -23,28 +23,34 @@ function Header() {
     <div>
         <div className={styled.header}>
 
-{/* ------------------------Menu Hamburguesa------------------------- */}
-<div>
-<button onClick={() => dispatch(showNavbar())} className={styled.ham}>
+                {/* ------------------------Menu Hamburguesa------------------------- */}
+                <div>
+                <button onClick={() => dispatch(showNavbar())} className={styled.ham}>
 
-  { navbarShow.status ? null :  <CiMenuBurger/>  }
-    
-  </button>
-</div>
-
-
-
-
-{/* ------------------------LOGO------------------------- */}
-<div> 
-<img src={logo} alt="logo" className={styled.img}/> 
-</div>
+                { navbarShow.status ? null :  <CiMenuBurger/>  }
+                    
+                </button>
+                </div>
 
 
 
-{/* ------------------------CARRITO------------------------- */}
-<div className={styled.carrito}> <CiShoppingCart className={styled.carrito} /> </div>
-</div>
+
+
+                {/* ------------------------LOGO------------------------- */}
+                <div> 
+                <img src={logo} alt="logo" className={styled.img}/> 
+                </div>
+
+
+
+
+                {/* ------------------------CARRITO------------------------- */}
+
+                <div className={styled.carrito}> <CiShoppingCart className={styled.carrito} /> </div>
+
+
+        </div>
+
     </div>
   )
 }

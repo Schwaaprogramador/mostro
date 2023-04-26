@@ -11,6 +11,7 @@ import camisa4 from '../../assets/fotos/camisablancaFront.jpg';
 import camisa5 from '../../assets/fotos/camisablancanaranjaFront.jpg';
 import { getProducts } from '../../redux/productFetch';
 import Header from '../Header/Header';
+import { Link } from 'react-router-dom';
 
 
 function Store() {
@@ -26,7 +27,7 @@ function Store() {
 
   console.log(products)
   
-
+//------------RENDER-------------
   return (
     <div className={styled.container}>
 
@@ -35,63 +36,61 @@ function Store() {
       { navbarShow.status ? <Navbar/> : null }
 
 
-
-    {/* ------------------------HEADER------------------------- */}
-      <Header/>
-
-    
+      {/* ------------------------HEADER------------------------- */}
+          <Header/>
 
 
+      {/* ------------------------CLOTHES------------------------- */}
+              <section className={styled.clothes}>
+
+                  <div className={styled.prenda}>
+                    <Link to="/negrarecuadro">
+                          <img src={camisa} alt="camisa negra con" className={styled.clothesImg2}/>
+                          </Link>      
+                          <div className={styled.info}>
+                            <p>Precio: 30.000 COP</p>
+                            <p>Camisa Negra</p>
+                          </div>
+                    
+                  </div>
 
 
-    {/* ------------------------CLOTHES------------------------- */}
-      <section className={styled.clothes}>
-
-          <div className={styled.prenda}>
-              <img src={camisa} alt="camisa negra con" className={styled.clothesImg2}/>
-              <div className={styled.info}>
-                <p>Precio: 30.000 COP</p>
-                <p>Camisa Negra</p>
-              </div> 
-          </div>
+                  <div className={styled.prenda}>
+                      <img src={camisa2} alt="camisa negra con" className={styled.clothesImg2}/>
+                      <div className={styled.info}>
+                        <p>Precio: 30.000 COP</p>
+                        <p>Camisa Negra-Amarillo</p>
+                      </div> 
+                  </div>
 
 
-          <div className={styled.prenda}>
-              <img src={camisa2} alt="camisa negra con" className={styled.clothesImg2}/>
-              <div className={styled.info}>
-                <p>Precio: 30.000 COP</p>
-                <p>Camisa Negra-Amarillo</p>
-              </div> 
-          </div>
+                  <div className={styled.prenda}>
+                      <img src={camisa3} alt="camisa negra con" className={styled.clothesImg2}/>
+                      <div className={styled.info}>
+                        <p>Precio: 30.000 COP</p>
+                        <p>Camisa Azul</p>
+                      </div> 
+                  </div>
 
 
-          <div className={styled.prenda}>
-              <img src={camisa3} alt="camisa negra con" className={styled.clothesImg2}/>
-              <div className={styled.info}>
-                <p>Precio: 30.000 COP</p>
-                <p>Camisa Azul</p>
-              </div> 
-          </div>
+                  <div className={styled.prenda}>
+                      <img src={camisa4} alt="camisa negra con" className={styled.clothesImg2}/>
+                      <div className={styled.info}>
+                        <p>Precio: 30.000 COP</p>
+                        <p>Camisa Blanca</p>
+                      </div> 
+                  </div>
 
 
-          <div className={styled.prenda}>
-              <img src={camisa4} alt="camisa negra con" className={styled.clothesImg2}/>
-              <div className={styled.info}>
-                <p>Precio: 30.000 COP</p>
-                <p>Camisa Blanca</p>
-              </div> 
-          </div>
-
-
-          <div className={styled.prenda}>
-              <img src={camisa5} alt="camisa negra con" className={styled.clothesImg2}/>
-              <div className={styled.info}>
-                <p>Precio: 30.000 COP</p>
-                <p>Camisa Blanca-naranja</p>
-              </div> 
-          </div>
-        
-      </section>
+                  <div className={styled.prenda}>
+                      <img src={camisa5} alt="camisa negra con" className={styled.clothesImg2}/>
+                      <div className={styled.info}>
+                        <p>Precio: 30.000 COP</p>
+                        <p>Camisa Blanca-naranja</p>
+                      </div> 
+                  </div>
+                
+              </section>
       
       
     </div>
