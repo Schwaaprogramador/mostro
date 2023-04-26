@@ -3,16 +3,14 @@ import styled from './Store.module.css';
 import Navbar from '../Navbar/Navbar';  
 import {useSelector, useDispatch  } from "react-redux";
 import { useEffect } from 'react';
-import { showNavbar, closeNavbar } from '../../redux/navbarSlice.js'; 
-import logo from '../../assets/img/logonegro.svg';
-import { CiShoppingCart } from "react-icons/ci";
-import { CiMenuBurger } from "react-icons/ci";
+import { closeNavbar } from '../../redux/navbarSlice.js'; 
 import camisa from '../../assets/fotos/camisanegraFront.jpg';
 import camisa2 from '../../assets/fotos/camisanegraamarillaFront.jpg';
 import camisa3 from '../../assets/fotos/camisaazulFront.jpg';
 import camisa4 from '../../assets/fotos/camisablancaFront.jpg';
 import camisa5 from '../../assets/fotos/camisablancanaranjaFront.jpg';
 import { getProducts } from '../../redux/productFetch';
+import Header from '../Header/Header';
 
 
 function Store() {
@@ -39,30 +37,7 @@ function Store() {
 
 
     {/* ------------------------HEADER------------------------- */}
-      <div className={styled.header}>
-
-          {/* ------------------------Menu Hamburguesa------------------------- */}
-        <div>
-          <button onClick={() => dispatch(showNavbar())} className={styled.ham}>
-
-            { navbarShow.status ? null :  <CiMenuBurger/>  }
-              
-            </button>
-        </div>
-
-
-
-
-          {/* ------------------------LOGO------------------------- */}
-        <div> 
-          <img src={logo} alt="logo" className={styled.img}/> 
-        </div>
-
-
-
-          {/* ------------------------CARRITO------------------------- */}
-        <div className={styled.carrito}> <CiShoppingCart className={styled.carrito} /> </div>
-      </div>
+      <Header/>
 
     
 

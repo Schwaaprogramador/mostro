@@ -13,16 +13,18 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-
-            {/* <Navbar/>  */}
-            
             
         <Routes>
+
+          {/* ----------------RUTAS NAVEGACION DE LA PAGINA--------------------- */}
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/culture" element={<Culture />} />
           <Route exact path="/store" element={<Store/>} />
           <Route exact path="/contact" element={<Contact/>} />
+
+
+          {/* ----------------RUTAS VISTAS CAMISAS--------------------- */}
           
         </Routes>
       

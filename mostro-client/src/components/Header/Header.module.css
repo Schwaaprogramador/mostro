@@ -1,0 +1,47 @@
+/* --------------HEADER------------------- */
+.header {
+    margin: 5px;
+    
+    border-top: 0.5px solid rgba(162, 161, 161, 0.666);
+    border-bottom: 0.5px solid rgba(162, 161, 161, 0.666);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+
+/* --------------LOGO------------------- */
+
+.img {
+    height: 7vh;
+    padding: 5px;
+}
+
+.img:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* --------------- MENU HAMBURGESA --------------- */
+
+.ham {
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+  }
+
+.ham:hover{
+    cursor: pointer;
+    
+}
+
+/*-----------------BOLSITA DE COMPRAS--------------------*/
+.carrito {
+    font-size: 2rem;
+}
