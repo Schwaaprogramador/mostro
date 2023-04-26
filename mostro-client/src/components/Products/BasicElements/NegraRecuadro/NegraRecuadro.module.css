@@ -1,11 +1,11 @@
 /*-------------CONTENIDO TOTAL DEL COMPONENTE-------------*/
 .container {
     
-    
     background-color: rgb(255, 255, 255);
     color: black;
     font-family: 'Montserrat', sans-serif;
 }
+
 
 /*---------CONTENIDO DEBAJO DEL HEADER----------*/
 .product {
@@ -43,10 +43,20 @@
 
 .imagenes {
     width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .img {
-    width: 30vw;
+    transition: transform 0.3s ease;
+    width: 25vw;
+    padding-bottom: 2rem;
+}
+
+.img:hover {
+    transform: scale(1.5);    
 }
 
 
