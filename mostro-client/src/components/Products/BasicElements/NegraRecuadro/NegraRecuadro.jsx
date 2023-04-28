@@ -57,7 +57,7 @@ function NegraRecuadro() {
 
                         {/* -------------INFO------------- */}
                         <div className={styled.info}>
-                                <div>
+                                <div className={styled.infoPrecio}>
                                     <div className={styled.datalleTitulo}>Camiseta Basic Elements Placa</div>
                                     <div className={styled.datalle}>COP 75.000</div>
                                 </div>
@@ -89,17 +89,26 @@ function NegraRecuadro() {
                     {/* ----------------------CARACTERISTICAS------------ */}
                         <div className={styled.caracteristicas}>
 
-                            <div className={styled.caracter}>Elige el color</div>
-                            <div className={styled.colorNegro}></div>
+                            <div>
 
-                            <div className={styled.caracter}>Elige talla</div>
+                                    <div className={styled.caracter}>Elige el color</div>
+                                    <div className={styled.colorNegro}></div>
 
-                            <div className={styled.tallas}>
-                                <div className={styled.talla}>M</div>
-                                <div className={styled.talla}>L</div>
-                                <div className={styled.talla}>XL</div>
-                                <div className={styled.talla}>XXL</div>
+
                             </div>
+                            
+                            <div>
+                                    <div className={styled.caracter}>Elige talla</div>
+
+                                    <div className={styled.tallas}>
+                                        <div className={styled.talla}>M</div>
+                                        <div className={styled.talla}>L</div>
+                                        <div className={styled.talla}>XL</div>
+                                        <div className={styled.talla}>XXL</div>
+                                    </div>
+
+                            </div>
+                            
 
                             <button className={styled.button}>AGREGAR A LA BOLSA</button>
 

@@ -6,85 +6,20 @@
 }
 
 
-/* --------------HEADER------------------- */
-.header {
-    margin: 5px;
-    
-    border-top: 0.5px solid rgba(162, 161, 161, 0.666);
-    border-bottom: 0.5px solid rgba(162, 161, 161, 0.666);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-}
-
-
-
-
-
-/* --------------LOGO------------------- */
-
-.img {
-    height: 7vh;
-    padding: 5px;
-}
-
-.img:hover {
-    cursor: pointer;
-}
-
-
-
-
-
-
-/* --------------- MENU HAMBURGESA --------------- */
-
-.ham {
-    font-size: 2rem;
-    background-color: transparent;
-    border: none;
-    color: rgb(0, 0, 0);
-  }
-
-.ham:hover{
-    cursor: pointer;
-    
-}
-
-
-
-
-
-/* ---------------FILTERS--------------- */
-
-.filters {
-    gap: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    border-bottom: 0.5px solid rgba(162, 161, 161, 0.666);
-    
-}
-
-.filter {
-    display: flex;
-    gap: 6px;
-}
-
-
-
-
 
 
 /* ----------------------clothes----------------------- */
 
 .clothes {
+    
+
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 0.5px solid rgba(92, 91, 91, 0.847);
-    margin: 5px;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+   
 }
 
 .info {
@@ -96,22 +31,36 @@
 }
 
 .prenda {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0);
-    width: 300px;
+    width: 250px;
     padding: 2rem;
     gap: 15px;
     
 }
 
 .clothesImg2 {
-    height: 400px;
+    width: 300px;
    
 }
 
 .carrito {
     font-size: 2rem;
+}
+
+@media (max-width:500px) {
+
+    .clothes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 0.5px solid rgba(92, 91, 91, 0.847);
+       
+    }
+
 }
