@@ -1,6 +1,6 @@
 /*-------------CONTENIDO TOTAL DEL COMPONENTE-------------*/
 .container {
-    
+    width: 99vw;
     background-color: rgb(255, 255, 255);
     color: black;
     font-family: 'Montserrat', sans-serif;
@@ -39,6 +39,7 @@
 
 
 
+
 /*----------------------IMAGENES--------------*/
 
 .imagenes {
@@ -50,14 +51,16 @@
 }
 
 .img {
-    transition: transform 0.3s ease;
+    /* transition: transform 0.3s ease; */
     width: 25vw;
     padding-bottom: 2rem;
 }
 
-.img:hover {
+/* .img:hover {
     transform: scale(1.5);    
-}
+} */
+
+
 
 
 
@@ -113,4 +116,125 @@
 .button:hover {
     background-color: rgba(0, 0, 0, 0.405);
     color: aliceblue;
+}
+
+
+/*----------RESPONSIVE-----------------*/
+
+@media (max-width:500px) {
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    /*-------------------IMAGENES-------------*/
+
+    .imagenes {
+        flex-direction: row;
+        order: -1;
+        width: 350px;
+    
+    }
+
+    .img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .7;
+        transition: .5s ease;
+
+    }
+    .img:hover {
+        width: 100px;
+        opacity: 1;
+        filter: contrast(120%);
+
+    }
+
+
+    /*---------------------INFO---------------*/
+
+        .info {
+            display: flex;
+            width: 350px;
+            padding: 3rem;
+            gap: 4rem;
+
+        }
+
+        .datalle {
+            padding-top: 2rem;
+        }
+
+        .datalleTitulo {
+            font-weight: bold;
+        }
+
+
+
+
+        /*-----------CARACTERISTICAS-----------*/
+            .caracteristicas {
+                display: flex;
+              
+                width: 350px;
+            }
+
+            .colorNegro {
+                margin: 1rem;
+                border-radius: 100%;
+                background-color: black;
+                width: 2rem;
+                height: 2rem;
+            }
+
+            .caracter {
+                padding-top: 2rem;
+                font-weight: bold;
+            }
+
+            .tallas {
+                display: flex;
+            }
+
+            .talla {
+                margin: 1rem;
+                border-radius: 100%;
+                width: 24px;
+                height: 24px;
+                border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
+            }
+
+            .talla:hover {
+                background-color: rgba(0, 0, 0, 0.405);
+                color: aliceblue;
+            }
+
+            .button {
+                margin-top: 2rem;
+                width: 28vw;
+                border-radius: 30px;
+                border: 1px solid black;
+                padding: 10px;
+                background-color: transparent;
+            }
+
+            .button:hover {
+                background-color: rgba(0, 0, 0, 0.405);
+                color: aliceblue;
+            }
+
+
+
 }

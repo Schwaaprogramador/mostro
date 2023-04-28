@@ -46,7 +46,7 @@ function Store() {
                   <div className={styled.prenda}>
                     <Link to="/negrarecuadro">
                           <img src={camisa} alt="camisa negra con" className={styled.clothesImg2}/>
-                          </Link>      
+                    </Link>      
                           <div className={styled.info}>
                             <p>Precio: 30.000 COP</p>
                             <p>Camisa Negra</p>

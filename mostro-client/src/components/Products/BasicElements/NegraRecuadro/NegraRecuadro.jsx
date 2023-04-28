@@ -62,7 +62,7 @@ function NegraRecuadro() {
                                     <div className={styled.datalle}>COP 75.000</div>
                                 </div>
 
-                                <div className={styled.datalle}>
+                                <div>
                                     <div className={styled.datalleTitulo}>Detalles de la prenda</div>
                                     <p className={styled.datalle}>Elaborada en tela licra algodón
                                         color negro, con aplique en 
