@@ -129,7 +129,7 @@
     
 
     .product {
-        
+       
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -168,67 +168,128 @@
     /*---------------------INFO---------------*/
 
         .info {
-            order: -2;
+            padding: 0px;
+            margin: 0px;
             display: flex;
-            width: 350px;
-            padding: 3rem;
-            gap: 4rem;
-
+            flex-direction: column;
+            
+            gap: 20px;
+            
+            width: 300px;
+            
+            
         }
 
-        .infoPrecio {
+
+        .infoContainer {
+            padding: 0px;
+            margin: 0px;
             display: flex;
-            gap: 2rem;
+            justify-content: space-between;
+            
+        
+            
         }
 
-        .datalle {
-            padding-top: 2rem;
-        }
-
-        .datalleTitulo {
+        .infoTitulo {
             font-weight: bold;
+            font-size: small;
         }
+        .infoPrecio {
+            padding: 0px;
+            margin: 0px;
+            font-size: smaller;
+            
+        }
+
+        .detalleContainer {
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        .datalle {
+            padding: 0px;
+            margin: 0px;
+            margin-top: 5px;
+            font-size: smaller;
+        }
+        
+        .datalleTitulo {
+            padding-bottom: 5px;
+            margin: 0px;
+            font-weight: bold;
+            font-size: small;
+            
+        }
+        
+
+        
 
 
 
 
         /*-----------CARACTERISTICAS-----------*/
+            
             .caracteristicas {
+                margin: 0px;
+                padding: 0px;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 3rem;
-                width: 30vw;
+                width: 300px;
+                margin-top: 20px;
+                    
+
+                
             }
 
-            .colorNegro {
-                margin: 1rem;
-                border-radius: 100%;
-                background-color: black;
-                width: 2rem;
-                height: 2rem;
+            /*-----------------COLOR--------------*/
+
+            .colorContainer {
+                width: 300px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 2    0px;
+                
             }
 
             .caracter {
-                padding-top: 2rem;
-                font-weight: bold;
+                padding: 0px;
+                margin: 0px;
+                font-size: small;
+            }
+
+            .colorNegro {
+                gap:0px;
+                border-radius: 100%;
+                background-color: black;
+                width: 35px;
+                height: 35px;
+            }
+
+
+            /*-----------------TALLAS--------------*/
+
+            .tallasContainer {
+                display: flex;
+                justify-content: space-between;
             }
 
             .tallas {
+                
                 display: flex;
+                gap: 15px;
             }
 
             .talla {
-                margin: 1rem;
+                padding: 0px;
+                margin: 0px;
                 border-radius: 100%;
-                width: 24px;
-                height: 24px;
+                width: 35px;
+                height: 35px;
                 border: 1px solid black;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 5px;
+                
+               
             }
 
             .talla:hover {
@@ -236,9 +297,17 @@
                 color: aliceblue;
             }
 
+
+            /*-----------------BOTTON--------------*/
+
+            .buttonContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
             .button {
                 margin-top: 2rem;
-                width: 28vw;
+                width: 200px;
                 border-radius: 30px;
                 border: 1px solid black;
                 padding: 10px;

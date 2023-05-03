@@ -57,12 +57,13 @@ function NegraRecuadro() {
 
                         {/* -------------INFO------------- */}
                         <div className={styled.info}>
-                                <div className={styled.infoPrecio}>
-                                    <div className={styled.datalleTitulo}>Camiseta Basic Elements Placa</div>
-                                    <div className={styled.datalle}>COP 75.000</div>
+                            
+                                <div className={styled.infoContainer}>
+                                    <div className={styled.infoTitulo}>Camiseta Basic Elements Placa</div>
+                                    <div className={styled.infoPrecio}>COP 75.000</div>
                                 </div>
 
-                                <div>
+                                <div className={styled.detalleContainer}>
                                     <div className={styled.datalleTitulo}>Detalles de la prenda</div>
                                     <p className={styled.datalle}>Elaborada en tela licra algodón
                                         color negro, con aplique en 
@@ -89,7 +90,7 @@ function NegraRecuadro() {
                     {/* ----------------------CARACTERISTICAS------------ */}
                         <div className={styled.caracteristicas}>
 
-                            <div>
+                            <div className={styled.colorContainer}>
 
                                     <div className={styled.caracter}>Elige el color</div>
                                     <div className={styled.colorNegro}></div>
@@ -97,7 +98,7 @@ function NegraRecuadro() {
 
                             </div>
                             
-                            <div>
+                            <div className={styled.tallasContainer}>
                                     <div className={styled.caracter}>Elige talla</div>
 
                                     <div className={styled.tallas}>
@@ -109,8 +110,11 @@ function NegraRecuadro() {
 
                             </div>
                             
-
+                            <div className={styled.buttonContainer}>
                             <button className={styled.button}>AGREGAR A LA BOLSA</button>
+
+                            </div>
+                            
 
                         </div>
 
