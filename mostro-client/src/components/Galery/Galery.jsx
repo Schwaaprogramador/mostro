@@ -1,4 +1,3 @@
-
 //-----------IMPORTACIONES--------
         //-----------REACT-----------
         import React from 'react';
@@ -7,8 +6,6 @@
         import { closeNavbar } from '../../redux/navbarSlice.js';
         import { useEffect } from 'react';
 
-        //-----------CSS------------------------
-        import styled from './Culture.module.css';
         // //-----------IMAGENES----------
         // import vistaFrente from '../../../../assets/Steez/Basic Elements/Fotos Negra Recuadro/NegraFrente.jpg';
         // import vistaEspalda from '../../../../assets/Steez/Basic Elements/Fotos Negra Recuadro/NegraEspalda.jpg'
@@ -20,7 +17,7 @@
         import Navbar from '../Navbar/Navbar';
 
 
-function Culture() {
+function Galery() {
 
   const dispatch = useDispatch();
   const navbarShow = useSelector(state => state.navbarStatus);
@@ -30,27 +27,19 @@ function Culture() {
       dispatch(closeNavbar());
       
   },[dispatch]);
-
-
   return (
-    <div className={styled.container}>
-           {/* ------------------------BARRA DE NAVEGACION------------------------- */}
+    <div>
+         {/* ------------------------BARRA DE NAVEGACION------------------------- */}
 
-          { navbarShow.status ? <Navbar/> : null }
+         { navbarShow.status ? <Navbar/> : null }
 
 
 
-            {/* -------------------HEADER--------------- */}
-            <Header/>
-
-      <div className={styled.center}>
-
-            <h2>Culture</h2>
-        
-      </div>
-      
+          {/* -------------------HEADER--------------- */}
+          <Header/>
+      <h2>GALERY</h2>
     </div>
   )
 }
 
-export default Culture;
+export default Galery

@@ -16,11 +16,6 @@
         import Header from '../../../Header/Header';
         import Navbar from '../../../Navbar/Navbar';
 
-        
-        
-
-
-
 
 function NegraRecuadro() {
 
@@ -126,4 +121,4 @@ function NegraRecuadro() {
   )
 }
 
-export default NegraRecuadro
+export default NegraRecuadro;

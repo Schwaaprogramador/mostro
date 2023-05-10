@@ -143,19 +143,28 @@
     /*-------------------IMAGENES-------------*/
 
     .imagenes {
-        flex-direction: row;
         order: -1;
-        width: 350px;
+        width: 300px;
+        position: relative;
+        display: flex;
+        overflow: scroll;
+        scroll-snap-type: x mandatory;
+
+        flex-direction:row;
+    justify-content:flex-start;
+    align-items:flex-start;
     
     }
 
     .img {
-        width: 0px;
-        flex-grow: 1;
-        object-fit: cover;
-        opacity: .7;
-        transition: .5s ease;
 
+        width: 100%;
+        left: 0;
+        position: sticky;
+        object-fit: cover;
+        border-radius: 5px;
+        scroll-snap-align: center;
+        
     }
     .img:hover {
         width: 150px;

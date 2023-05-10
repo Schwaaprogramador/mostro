@@ -1,10 +1,11 @@
 //---COMPONENTES----
-import About from "./components/About/About";
+import Mostro from "./components/Mostro/Mostro";
 import Culture from "./components/Culture/Culture";
-//import Navbar from "./components/Navbar/Navbar";
+import Galery from "./components/Galery/Galery";
 import Store from "./components/Store/Store";
 import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
+import NewCollection from "./components/NewCollection/NewCollection";
 
 //---DEPENDENCIAS----
 import { Route, Routes } from "react-router-dom";
@@ -13,6 +14,8 @@ import { Route, Routes } from "react-router-dom";
 import NegraRecuadro from "./components/Products/BasicElements/NegraRecuadro/NegraRecuadro";
 
 
+
+//---------RENDER DEL COMPONENTE----------------------
 function App() {
   return (
     <div className="App">
@@ -21,9 +24,13 @@ function App() {
 
           {/* ----------------RUTAS NAVEGACION DE LA PAGINA--------------------- */}
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/culture" element={<Culture />} />
           <Route exact path="/store" element={<Store/>} />
+          <Route exact path="/mostro" element={<Mostro />} />
+          <Route exact path="/culture" element={<Culture />} />
+          <Route exact path="/newcollection" element={<NewCollection />} />
+          <Route exact path="/galery" element={<Galery />} />
+          
+          {/* ---------------- RUTAS ADMIN DE LA PAGINA --------------------- */}
           <Route exact path="/contact" element={<Contact/>} />
 
 

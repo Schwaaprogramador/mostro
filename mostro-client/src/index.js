@@ -23,6 +23,7 @@ root.render(
         >
 
           <App />
+          
           </Auth0Provider>
     </Provider>
   </BrowserRouter>
