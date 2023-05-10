@@ -123,13 +123,14 @@
 
 
 /*--------------------RESPONSIVE----------------------*/
+/*----------------------------------------------------*/
 
-@media (max-width:600px) {
+@media (max-width:700px) {
 
     
 
     .product {
-       
+        gap: 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -143,17 +144,31 @@
     /*-------------------IMAGENES-------------*/
 
     .imagenes {
+        
         order: -1;
         width: 300px;
         position: relative;
         display: flex;
-        overflow: scroll;
+        overflow: auto;
         scroll-snap-type: x mandatory;
-
+        margin-bottom: 15px;
         flex-direction:row;
-    justify-content:flex-start;
-    align-items:flex-start;
+        justify-content:flex-start;
+        align-items:flex-start;
     
+    }
+    .imagenes::-webkit-scrollbar {
+        height: 5px;
+        border-radius: 25px;
+        background-color: rgba(235, 232, 232, 0.644);
+    }
+    .imagenes::-webkit-scrollbar-thumb {
+        
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.507);
+    }
+    .imagenes::-webkit-scrollbar-track {
+        background: #f1f1f1;
     }
 
     .img {
@@ -164,14 +179,11 @@
         object-fit: cover;
         border-radius: 5px;
         scroll-snap-align: center;
+        scroll-behavior: smooth;
+        
         
     }
-    /* .img:hover {
-        width: 150px;
-        opacity: 1;
-        filter: contrast(120%);
-
-    } */
+    
 
 
     /*---------------------INFO---------------*/
