@@ -166,12 +166,12 @@
         scroll-snap-align: center;
         
     }
-    .img:hover {
+    /* .img:hover {
         width: 150px;
         opacity: 1;
         filter: contrast(120%);
 
-    }
+    } */
 
 
     /*---------------------INFO---------------*/
