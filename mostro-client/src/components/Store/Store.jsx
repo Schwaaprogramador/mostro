@@ -4,11 +4,10 @@ import Navbar from '../Navbar/Navbar';
 import {useSelector, useDispatch  } from "react-redux";
 import { useEffect } from 'react';
 import { closeNavbar } from '../../redux/navbarSlice.js'; 
-import camisa from '../../assets/fotos/camisanegraFront.jpg';
-import camisa2 from '../../assets/fotos/camisanegraamarillaFront.jpg';
-import camisa3 from '../../assets/fotos/camisaazulFront.jpg';
-import camisa4 from '../../assets/fotos/camisablancaFront.jpg';
-import camisa5 from '../../assets/fotos/camisablancanaranjaFront.jpg';
+//------------------CAMISAS-------------------
+import camisaNegraCuadro from '../../assets/Steez/Basic Elements/Fotos Negra Recuadro/NegraFrente.jpg';
+import camisaAzulRey from '../../assets/Steez/Basic Elements/Fotos Azul Rey/AzulFrente.jpg';
+
 import { getProducts } from '../../redux/productFetch';
 import Header from '../Header/Header';
 import { Link } from 'react-router-dom';
@@ -45,29 +44,30 @@ function Store() {
 
                   <div className={styled.prenda}>
                     <Link to="/negrarecuadro">
-                          <img src={camisa} alt="camisa negra con" className={styled.clothesImg2}/>
-                    </Link>      
+                          <img src={camisaNegraCuadro} alt="camisa negra cuadro" className={styled.clothesImg2}/>
+                        
                           <div className={styled.info}>
-                            <p>Precio: 30.000 COP</p>
-                            <p>Camisa Negra</p>
+                            <p className={styled.infoPrecio}> COP 75.000</p>
+                            <p className={styled.infoNombre}> BASIC ELEMENTS PLACA</p>
                           </div>
-                    
+                          </Link>  
                   </div>
 
 
                   <div className={styled.prenda}>
+                      <Link to="/azulrey">
+                        <img src={camisaAzulRey} alt="camisa azul rey" className={styled.clothesImg2}/>
 
-                      <img src={camisa2} alt="camisa negra con" className={styled.clothesImg2}/>
-
-                      <div className={styled.info}>
-                        <p>Precio: 30.000 COP</p>
-                        <p>Camisa Negra-Amarillo</p>
-                      </div> 
+                        <div className={styled.info}>
+                          <p className={styled.infoPrecio}>COP 75.000 </p>
+                          <p className={styled.infoNombre}>BASIC ELEMENTS</p>
+                        </div>
+                      </Link>  
                   </div>
 
 
                   <div className={styled.prenda}>
-                      <img src={camisa3} alt="camisa negra con" className={styled.clothesImg2}/>
+                      <img src={camisaAzulRey} alt="camisa negra con" className={styled.clothesImg2}/>
                       <div className={styled.info}>
                         <p>Precio: 30.000 COP</p>
                         <p>Camisa Azul</p>
@@ -76,7 +76,7 @@ function Store() {
 
 
                   <div className={styled.prenda}>
-                      <img src={camisa4} alt="camisa negra con" className={styled.clothesImg2}/>
+                      <img src={camisaAzulRey} alt="camisa negra con" className={styled.clothesImg2}/>
                       <div className={styled.info}>
                         <p>Precio: 30.000 COP</p>
                         <p>Camisa Blanca</p>
@@ -85,7 +85,7 @@ function Store() {
 
 
                   <div className={styled.prenda}>
-                      <img src={camisa5} alt="camisa negra con" className={styled.clothesImg2}/>
+                      <img src={camisaAzulRey} alt="camisa negra con" className={styled.clothesImg2}/>
                       <div className={styled.info}>
                         <p>Precio: 30.000 COP</p>
                         <p>Camisa Blanca-naranja</p>

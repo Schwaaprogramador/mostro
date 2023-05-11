@@ -27,6 +27,8 @@ function Galery() {
       dispatch(closeNavbar());
       
   },[dispatch]);
+
+  
   return (
     <div>
          {/* ------------------------BARRA DE NAVEGACION------------------------- */}
