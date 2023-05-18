@@ -13,6 +13,8 @@ import { Route, Routes } from "react-router-dom";
 //------CAMISAS-----------
 import NegraRecuadro from "./components/Products/BasicElements/NegraRecuadro/NegraRecuadro";
 import AzulRey from "./components/Products/BasicElements/AzulRey/AzulRey";
+import Blanca from "./components/Products/BasicElements/Blanca/Blanca";
+import NegraAmarilla from "./components/Products/BasicElements/NegraAmarilla/NegraAmarilla";
 
 
 
@@ -38,6 +40,9 @@ function App() {
           {/* ----------------RUTAS VISTAS CAMISAS--------------------- */}
           <Route exact path="/negrarecuadro" element={<NegraRecuadro/>} />
           <Route exact path="/azulrey" element={<AzulRey/>} />
+          <Route exact path="/blanca" element={<Blanca/>} />
+          <Route exact path="/negraamarillo" element={<NegraAmarilla/>} />
+
 
 
 
