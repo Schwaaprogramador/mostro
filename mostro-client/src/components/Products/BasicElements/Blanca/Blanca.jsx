@@ -67,10 +67,10 @@ function Blanca() {
                                 <div className={styled.detalleContainer}>
                                     <div className={styled.datalleTitulo}>Detalles de la prenda</div>
                                     <p className={styled.datalle}>Elaborada en tela licra algodón
-                                                                color azul rey, con estampado en
-                                                                alta densidad del mismo tono
-                                                                de la tela y el logo estampado en 
-                                                                plastisol plano color naranja.</p>
+                                                                    color blanco, con estampado en
+                                                                    alta densidad del mismo tono
+                                                                    de la tela y el logo estampado en 
+                                                                    plastisol plano color naranja.</p>
                                 </div>
                         </div>
 
@@ -99,12 +99,17 @@ function Blanca() {
 
                                     <div className={styled.colores}>
 
-                                            <Link to="/negrarecuadro">
+                                            <Link to="/negraamarillo">
                                                 <div className={styled.colorNegro}></div>
                                             </Link>
-
+                                            
+                                            <Link to="/blanca">
                                             <div className={styled.colorBlanco}></div>
+                                            </Link>
+
+                                            <Link to="/azulrey">
                                             <div className={styled.colorAzul}></div>
+                                            </Link>
                                     </div>
                                     
 

@@ -1,6 +1,7 @@
 /* --------------HEADER------------------- */
 .header {
-    margin: 5px;
+    margin: 0px;
+    padding: 5px;
     border-bottom: 0.5px solid rgba(162, 161, 161, 0.666);
     display: flex;
     
@@ -13,7 +14,7 @@
 /* --------------LOGO------------------- */
 
 .img {
-    height: 7vh;
+    height: 6vh;
     padding: 5px;
 }
 

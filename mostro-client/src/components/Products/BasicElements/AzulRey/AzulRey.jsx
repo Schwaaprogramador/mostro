@@ -99,12 +99,17 @@ function AzulRey() {
 
                                     <div className={styled.colores}>
 
-                                            <Link to="/negrarecuadro">
+                                            <Link to="/negraamarillo">
                                                 <div className={styled.colorNegro}></div>
                                             </Link>
-
+                                            
+                                            <Link to="/blanca">
                                             <div className={styled.colorBlanco}></div>
+                                            </Link>
+
+                                            <Link to="/azulrey">
                                             <div className={styled.colorAzul}></div>
+                                            </Link>
                                     </div>
                                     
 
