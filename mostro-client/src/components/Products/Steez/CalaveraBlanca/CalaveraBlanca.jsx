@@ -1,29 +1,24 @@
-//-----------IMPORTACIONES-------------------
-
+//-----------IMPORTACIONES--------
         //-----------REACT-----------
         import React from 'react';
+        import styled from './CalaveraBlanca.module.css';
         import {useSelector, useDispatch  } from "react-redux";
         import { closeNavbar } from '../../../../redux/navbarSlice.js';
         import { useEffect } from 'react';
         import { Link } from 'react-router-dom';
 
-        //-----------CSS----------
-        import styled from './AzulRey.module.css';
-
         //-----------IMAGENES----------
-        import vistaFrente from '../../../../assets/Steez/Basic Elements/Fotos Azul Rey/AzulFrente.jpg';
-        import vistaEspalda from '../../../../assets/Steez/Basic Elements/Fotos Azul Rey/AzulEspalda.jpg'
-        import vistaInferior from '../../../../assets/Steez/Basic Elements/Fotos Azul Rey/AzulDetalleInferiorIzq.jpg'
-        import vistaDetalle from '../../../../assets/Steez/Basic Elements/Fotos Azul Rey/AzulDetalleFrente.jpg'
+        import vistaFrente from '../../../../assets/Steez/Steez Til Def/Calavera Camiseta Blanca/BlancaFrente.jpg';
+        import vistaEspalda from '../../../../assets/Steez/Steez Til Def/Calavera Camiseta Blanca/BlancaEspalda.jpg'
+        import vistaInferior from '../../../../assets/Steez/Steez Til Def/Calavera Camiseta Blanca/DetalleFrente.jpg'
+        import vistaDetalle from '../../../../assets/Steez/Steez Til Def/Calavera Camiseta Blanca/FrenteDetalle2.jpg'
 
         //-------COMPONENTES-----------
         import Header from '../../../Header/Header';
         import Navbar from '../../../Navbar/Navbar';
 
 
-
-//---------------------------RENDER DEL COMPONENTE---------------------------
-function AzulRey() {
+function CalaveraBlanca() {
 
     const dispatch = useDispatch();
     const navbarShow = useSelector(state => state.navbarStatus);
@@ -60,17 +55,17 @@ function AzulRey() {
                         <div className={styled.info}>
                             
                                 <div className={styled.infoContainer}>
-                                    <div className={styled.infoTitulo}>Camiseta Basic Elements </div>
-                                    <div className={styled.infoPrecio}>COP 75.000</div>
-                                </div>  
+                                    <div className={styled.infoTitulo}>Camiseta Basic Elements Placa</div>
+                                    <div className={styled.infoPrecio}>COP 65.000</div>
+                                </div>
 
                                 <div className={styled.detalleContainer}>
                                     <div className={styled.datalleTitulo}>Detalles de la prenda</div>
                                     <p className={styled.datalle}>Elaborada en tela licra algodón
-                                                                color azul rey, con estampado en
-                                                                alta densidad del mismo tono
-                                                                de la tela y el logo estampado en 
-                                                                plastisol plano color naranja.</p>
+                                                                    color blanco, con estampado en
+                                                                    alta densidad en el frente y 
+                                                                    estampado textil en la parte
+                                                                    de atrás color verde antioquia.</p>
                                 </div>
                         </div>
 
@@ -78,7 +73,7 @@ function AzulRey() {
 
 
                     {/* --------------IMAGENES------------------------ */}
-                    <div className={styled.imagenes}> 
+                    <div className={styled.imagenes}>
                         <img src={vistaFrente} alt="camisa-negra-mostro-clothes-black-tshirt" className={styled.img}/>
                         <img src={vistaEspalda} alt="camisa-negra-mostro-clothes-black-tshirt" className={styled.img}/>
                         <img src={vistaInferior} alt="camisa-negra-mostro-clothes-black-tshirt" className={styled.img}/>
@@ -96,17 +91,9 @@ function AzulRey() {
                             <div className={styled.colorContainer}>
 
                                     <div className={styled.caracter}>Elige el color</div>
-
-                                    <div className={styled.colores}>
-
-                                            <Link to="/negrarecuadro">
-                                                <div className={styled.colorNegro}></div>
-                                            </Link>
-
-                                            <div className={styled.colorBlanco}></div>
-                                            <div className={styled.colorAzul}></div>
-                                    </div>
-                                    
+                                    <Link to="/calaveranegra">
+                                    <div className={styled.colorNegro}></div>
+                                    </Link>
 
 
                             </div>
@@ -139,4 +126,4 @@ function AzulRey() {
   )
 }
 
-export default AzulRey;
+export default CalaveraBlanca;

@@ -1,0 +1,367 @@
+/*-------------CONTENIDO TOTAL DEL COMPONENTE-------------*/
+.container {
+    width: 99vw;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*---------CONTENIDO DEBAJO DEL HEADER----------*/
+.product {
+
+    padding-left: 3rem;
+    padding-top: 4rem;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/*---------------------INFO---------------*/
+
+.info {
+    width: 300px;
+    padding: 50px;
+    
+}
+
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infoTitulo {
+    font-weight: bold;
+}
+
+
+
+.detalleContainer {
+    margin-top: 20px;
+}
+
+.datalleTitulo {
+    font-weight: bold;
+}
+
+.datalle {
+    padding-top: 1rem;
+    font-size: smaller;
+}
+
+
+
+
+
+
+
+
+/*----------------------IMAGENES--------------*/
+
+.imagenes {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    transition: transform 0.3s ease; 
+    width: 25vw;
+    padding-bottom: 2rem;
+}
+
+ .img:hover {
+    transform: scale(1.5);    
+} 
+
+
+
+
+
+/*-----------CARACTERISTICAS-----------*/
+.caracteristicas {
+    padding: 3rem;
+    width: 30vw;
+}
+
+.colorNegro {
+    margin: 1rem;
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid black;
+}
+
+.caracter {
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+.tallas {
+    display: flex;
+}
+
+.talla {
+    margin: 1rem;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.talla:hover {
+    background-color: rgba(0, 0, 0, 0.405);
+    color: aliceblue;
+}
+
+.button {
+    margin-top: 2rem;
+    width: 28vw;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.405);
+    color: aliceblue;
+}
+
+
+
+
+
+/*--------------------RESPONSIVE----------------------*/
+/*----------------------------------------------------*/
+
+@media (max-width:800px) {
+
+    
+
+    .product {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    /*-------------------IMAGENES-------------*/
+
+    .imagenes {
+        
+        order: -1;
+        width: 300px;
+        position: relative;
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        margin-bottom: 15px;
+        flex-direction:row;
+        justify-content:flex-start;
+        align-items:flex-start;
+    
+    }
+    .imagenes::-webkit-scrollbar {
+        height: 5px;
+        border-radius: 25px;
+        background-color: rgb(87, 87, 87);
+    }
+    .imagenes::-webkit-scrollbar-thumb {
+        
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, 0.916);
+    }
+    .imagenes::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .img {
+        transition: none;
+        width: 100%;
+        left: 0;
+        position: sticky;
+        object-fit: cover;
+        border-radius: 5px;
+        scroll-snap-align: center;
+        scroll-behavior: smooth;
+        
+        
+    }
+    .img:hover {
+        transform: none;
+    }
+
+
+    /*---------------------INFO---------------*/
+
+        .info {
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            
+            gap: 20px;
+            
+            width: 300px;
+            
+            
+        }
+
+
+        .infoContainer {
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            justify-content: space-between;
+            
+        
+            
+        }
+
+        .infoTitulo {
+            font-weight: bold;
+            font-size: small;
+        }
+        .infoPrecio {
+            padding: 0px;
+            margin: 0px;
+            font-size: smaller;
+            
+        }
+
+        .detalleContainer {
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        .datalle {
+            padding: 0px;
+            margin: 0px;
+            margin-top: 5px;
+            font-size: smaller;
+        }
+        
+        .datalleTitulo {
+            padding-bottom: 5px;
+            margin: 0px;
+            font-weight: bold;
+            font-size: small;
+            
+        }
+        
+
+        
+
+
+
+
+        /*-----------CARACTERISTICAS-----------*/
+            
+            .caracteristicas {
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                margin-top: 20px;
+                    
+
+                
+            }
+
+            /*-----------------COLOR--------------*/
+
+            .colorContainer {
+                width: 300px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 2    0px;
+                
+            }
+
+            .caracter {
+                padding: 0px;
+                margin: 0px;
+                font-size: small;
+            }
+
+            .colorNegro {
+                gap:0px;
+                border-radius: 100%;
+                background-color: black;
+                width: 35px;
+                height: 35px;
+            }
+
+
+            /*-----------------TALLAS--------------*/
+
+            .tallasContainer {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .tallas {
+                
+                display: flex;
+                gap: 15px;
+            }
+
+            .talla {
+                padding: 0px;
+                margin: 0px;
+                border-radius: 100%;
+                width: 35px;
+                height: 35px;
+                border: 1px solid black;
+                
+               
+            }
+
+            .talla:hover {
+                background-color: rgba(0, 0, 0, 0.405);
+                color: aliceblue;
+            }
+
+
+            /*-----------------BOTTON--------------*/
+
+            .buttonContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .button {
+                margin-top: 2rem;
+                width: 200px;
+                border-radius: 30px;
+                border: 1px solid black;
+                padding: 10px;
+                background-color: transparent;
+            }
+
+            .button:hover {
+                background-color: rgba(0, 0, 0, 0.405);
+                color: aliceblue;
+            }
+
+
+
+}

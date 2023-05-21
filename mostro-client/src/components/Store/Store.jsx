@@ -9,6 +9,8 @@ import camisaNegraCuadro from '../../assets/Steez/Basic Elements/Fotos Negra Rec
 import camisaAzulRey from '../../assets/Steez/Basic Elements/Fotos Azul Rey/AzulFrente.jpg';
 import camisaBlanca from '../../assets/Steez/Basic Elements/Fotos Camiseta Blanca/BlancaFrente.jpg';
 import camisaNegra from '../../assets/Steez/Basic Elements/Fotos Negra logo amarillo/NegraFrente.jpg';
+import camisaBlancaCalavera from '../../assets/Steez/Steez Til Def/Calavera Camiseta Blanca/BlancaFrente.jpg';
+import camisaNegraCalavera from '../../assets/Steez/Steez Til Def/Calavera Camiseta Negra/NegraFrente.jpg';
 
 // --------REDUX---------------
 import { getProducts } from '../../redux/productFetch';
@@ -96,12 +98,28 @@ function Store() {
                   </div>
 
 
+                  {/* CAMISA BLANCA CALAVEREA */}
                   <div className={styled.prenda}>
-                      <img src={camisaAzulRey} alt="camisa negra con" className={styled.clothesImg2}/>
-                      <div className={styled.info}>
-                        <p>Precio: 30.000 COP</p>
-                        <p>Camisa Blanca-naranja</p>
-                      </div> 
+                      <Link to="/calaverablanca">
+                        <img src={camisaBlancaCalavera} alt="CAMISETA NEGRA" className={styled.clothesImg2}/>
+                      </Link>  
+                        <div className={styled.info}>
+                          <p className={styled.infoPrecio}>COP 65.000 </p>
+                          <p className={styled.infoNombre}>STEEZ TIL'DEF</p>
+                        </div>
+                      
+                  </div>
+
+                  {/* CAMISA NEGRA CALAVEREA */}
+                  <div className={styled.prenda}>
+                      <Link to="/calaveranegra">
+                        <img src={camisaNegraCalavera} alt="CAMISETA NEGRA" className={styled.clothesImg2}/>
+                      </Link>  
+                        <div className={styled.info}>
+                          <p className={styled.infoPrecio}>COP 65.000 </p>
+                          <p className={styled.infoNombre}>STEEZ TIL'DEF</p>
+                        </div>
+                      
                   </div>
                 
               </section>

@@ -15,6 +15,8 @@ import NegraRecuadro from "./components/Products/BasicElements/NegraRecuadro/Neg
 import AzulRey from "./components/Products/BasicElements/AzulRey/AzulRey";
 import Blanca from "./components/Products/BasicElements/Blanca/Blanca";
 import NegraAmarilla from "./components/Products/BasicElements/NegraAmarilla/NegraAmarilla";
+import CalaveraBlanca from "./components/Products/Steez/CalaveraBlanca/CalaveraBlanca";
+import CalaveraNegra from "./components/Products/Steez/CalaveraNegra/CalaveraNegra";
 
 
 
@@ -42,6 +44,8 @@ function App() {
           <Route exact path="/azulrey" element={<AzulRey/>} />
           <Route exact path="/blanca" element={<Blanca/>} />
           <Route exact path="/negraamarillo" element={<NegraAmarilla/>} />
+          <Route exact path="/calaverablanca" element={<CalaveraBlanca/>} />
+          <Route exact path="/calaveranegra" element={<CalaveraNegra/>} />
 
 
 
