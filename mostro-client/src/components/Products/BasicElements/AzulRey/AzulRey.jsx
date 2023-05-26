@@ -11,10 +11,10 @@
         import styled from './AzulRey.module.css';
 
         //-----------IMAGENES----------
-        import vistaFrente from '../../../../assets/Steez/Basic Elements/Fotos Azul Rey/AzulFrente.jpg';
-        import vistaEspalda from '../../../../assets/Steez/Basic Elements/Fotos Azul Rey/AzulEspalda.jpg'
-        import vistaInferior from '../../../../assets/Steez/Basic Elements/Fotos Azul Rey/AzulDetalleInferiorIzq.jpg'
-        import vistaDetalle from '../../../../assets/Steez/Basic Elements/Fotos Azul Rey/AzulDetalleFrente.jpg'
+       // import vistaFrente from '../../../../assets/Steez/Basic Elements/Fotos Azul Rey/AzulFrente.jpg';
+        //import vistaEspalda from '../../../../assets/Steez/Basic Elements/Fotos Azul Rey/AzulEspalda.jpg'
+        //import vistaInferior from '../../../../assets/Steez/Basic Elements/Fotos Azul Rey/AzulDetalleInferiorIzq.jpg'
+       // import vistaDetalle from '../../../../assets/Steez/Basic Elements/Fotos Azul Rey/AzulDetalleFrente.jpg'
 
         //-------COMPONENTES-----------
         import Header from '../../../Header/Header';
@@ -79,10 +79,10 @@ function AzulRey() {
 
                     {/* --------------IMAGENES------------------------ */}
                     <div className={styled.imagenes}> 
-                        <img src={vistaFrente} alt="camisa-negra-mostro-clothes-black-tshirt" className={styled.img}/>
-                        <img src={vistaEspalda} alt="camisa-negra-mostro-clothes-black-tshirt" className={styled.img}/>
-                        <img src={vistaInferior} alt="camisa-negra-mostro-clothes-black-tshirt" className={styled.img}/>
-                        <img src={vistaDetalle} alt="camisa-negra-mostro-clothes-black-tshirt" className={styled.img}/>
+                        <img src='https://res.cloudinary.com/drnryofoj/image/upload/v1685077139/mostro-imagenes/AzulFrente_ghp8hi.jpg' alt="camisa-negra-mostro-clothes-black-tshirt" className={styled.img}/>
+                        <img src='https://res.cloudinary.com/drnryofoj/image/upload/v1685077139/mostro-imagenes/AzulEspalda_vn2jqs.jpg' alt="camisa-negra-mostro-clothes-black-tshirt" className={styled.img}/>
+                        <img src='https://res.cloudinary.com/drnryofoj/image/upload/v1685077140/mostro-imagenes/AzulDetalleInferiorIzq_guahev.jpg' alt="camisa-negra-mostro-clothes-black-tshirt" className={styled.img}/>
+                        <img src='https://res.cloudinary.com/drnryofoj/image/upload/v1685076929/mostro-imagenes/AzulDetalleFrente_h3rnlb.jpg' alt="camisa-negra-mostro-clothes-black-tshirt" className={styled.img}/>
 
                     </div>
 
