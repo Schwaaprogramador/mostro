@@ -1,0 +1,25 @@
+.colorNegro {
+    
+    margin: 1rem;
+    border-radius: 100%;
+    background-color: black;
+    width: 2rem;
+    height: 2rem;
+}
+
+.colorBlanca {
+    margin: 1rem;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.567);
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+}
+
+.colorAzul {
+    margin: 1rem;
+    border-radius: 100%;
+    background-color: rgb(19, 0, 230);
+    width: 2rem;
+    height: 2rem;
+}

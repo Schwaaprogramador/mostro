@@ -34,14 +34,11 @@ function Home() {
 //   });
 // };
 
-console.log(navbarShow.status)
+
 
   return (
     <div className={styled.container}>
-
-        { navbarShow.status ? <Navbar/> : null }
-        
-
+               
           <div className={styled.home}>
 
                 <Animated animationIn="zoomInUp" animationOut="fadeOut" isVisible={true} animationInDuration = { 3000 }>
@@ -55,11 +52,13 @@ console.log(navbarShow.status)
                     </div>
                 </Animated>
 
-                        <button onClick={() => dispatch(showNavbar())} className={styled.ham}>
+                  {/* -----------------------BARRA DE NAVEGACION -------------------------------------- */}
+                    { navbarShow.status ? <Navbar/> : null }
+                    <button onClick={() => dispatch(showNavbar())} className={styled.ham}>
 
-                            { navbarShow.status ? null :  <CiMenuBurger/>  }
-                              
-                        </button>
+                        { navbarShow.status ? null :  <CiMenuBurger/>  }
+                          
+                    </button>
  
           </div>
       
