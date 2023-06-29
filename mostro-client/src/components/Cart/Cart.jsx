@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styled from './Cart.module.css';
 import {useSelector, useDispatch  } from "react-redux";
 import { IoClose  } from 'react-icons/io5';
-import { closeCart } from '../../redux/cartSlice';
+import { closeCart  } from '../../redux/cartSlice';
 import { closeNavbar } from '../../redux/navbarSlice';
 import CartItem from './CartItem';
 
@@ -12,9 +12,11 @@ function Cart() {
   const dispatch = useDispatch();
   const cart = useSelector( state => state.cart );
   
+  
 
   useEffect(()=>{
     dispatch(closeNavbar());
+    //dispatch(totalCart())
   },[dispatch]);
 
 
@@ -69,6 +71,7 @@ function Cart() {
 
                   <div className={styled.total}>
                       <p>TOTAL</p>
+                      {cart.total}
                   </div>
 
 

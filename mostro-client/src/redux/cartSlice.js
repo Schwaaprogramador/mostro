@@ -4,6 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     status: false,
     items: [],
+    total: 0,
 };
 
 
@@ -34,7 +35,17 @@ export const cartSlice = createSlice({
                 state.items.splice(itemIndex, 1);
             }
         },
-        restarCantidad: ()=>{},
+        restarCantidad: (state, action)=>{
+            let itemCart = state.items.find( item => item.id === action.payload.id )
+            itemCart.cantidad=-1;
+        },
+        totalCart: (state)=>{
+           
+            let total = state.items.reduce((acumulador, item)=>{
+                return acumulador =+ item.valor * item.cantidad;
+            })
+            state.total = total
+        },
         openCart: (state)=>{
             state.status = true;
         },
@@ -44,7 +55,7 @@ export const cartSlice = createSlice({
     }
 })
 
-export const { addCart, deleteCart, openCart, closeCart , restarCantidad} = cartSlice.actions;
+export const { addCart, deleteCart, openCart, closeCart , restarCantidad, totalCart} = cartSlice.actions;
 
 
 export default cartSlice.reducer;

@@ -60,11 +60,15 @@
     align-items: center;
     justify-content: center;
     border-radius: 100%;
-    border: 1px black solid;
-    height: 10px;
-    width: 10px;
-    font-size: 9px;
-    position: fixed;
-    right: 11px;
-    top: 11px;
+    height: 9px;
+    width: 9px;
+    font-size: 8px;
+    padding: 1px;
+    
+}
+
+.contadorContainer {
+    display: flex;
+    gap: 0px;
+    
 }

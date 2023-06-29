@@ -63,3 +63,11 @@
     color: aliceblue;
     padding: 15px;
 }
+
+.total {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    border-top: 1px white solid;
+}

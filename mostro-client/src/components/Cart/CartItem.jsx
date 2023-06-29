@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from './CartItem.module.css';
 import { IoCloseCircleOutline } from 'react-icons/io5';
-import { addCart, deleteCart } from '../../redux/cartSlice.js';
+import { addCart, deleteCart, restarCantidad } from '../../redux/cartSlice.js';
 import {useDispatch  } from "react-redux"; 
 
 
@@ -13,6 +13,10 @@ function CartItem({id, img, nombre , precio, cantidad}) {
   const addToBolsita = () => { 
     dispatch(addCart({id, img, nombre , precio, cantidad}))
     
+  }
+
+  const restar = ()=>{
+    dispatch(restarCantidad({id}))
   }
 
   const deleteFromBolsita = () => { 
@@ -37,7 +41,7 @@ function CartItem({id, img, nombre , precio, cantidad}) {
             <p className={styled.nombre}>{precio}</p>
 
             <div className={styled.cantidad}>
-              <button onClick={deleteFromBolsita} className={styled.button}>-</button>
+              <button onClick={restar} className={styled.button}>-</button>
               <p className={styled.nombre}>{cantidad}</p>
               <button onClick={addToBolsita} className={styled.buttonMas}>+</button>
             </div>
