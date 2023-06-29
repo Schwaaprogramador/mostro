@@ -13,16 +13,14 @@
 
         //-------COMPONENTES-----------
         import Header from '../Header/Header.jsx';
-       // import Navbar from '../Navbar/Navbar.jsx';
-import Color from './Color.jsx';
-import { addCart } from '../../redux/cartSlice.js';
+        import Color from './Color.jsx';
+        import { addCart } from '../../redux/cartSlice.js';
 
 
 function ProductDetail() {
   
   const params = useParams(); //por aca llega el nombre y el color de la camisa que se renderiza.
   const dispatch = useDispatch();
-  //const navbarShow = useSelector(state => state.navbarStatus);
   const productDetail = useSelector(state => state.products.productDetail); // El estado que se esta renderizando.
   const colores = useSelector(state => state.products.colores); // Array de las camisas con el mismo nombre, diferente color.
   
@@ -35,17 +33,13 @@ function ProductDetail() {
 
     const addToBolsita = () => { 
       dispatch(addCart(productDetail[0]))
-      console.log(productDetail[0])
+      
     }
 
     
     
   return (
     <div className={styled.container}>
-
-            {/* ------------------------BARRA DE NAVEGACION------------------------- */}
-
-            {/* { navbarShow.status ? <Navbar/> : null } */}
 
 
 
@@ -76,7 +70,9 @@ function ProductDetail() {
 
                     {/* --------------IMAGENES------------------------ */}
                     <div className={styled.imagenes}> 
+
                       {productDetail[0].imagenes.map( img => <img src={img} alt={productDetail[0].name} className={styled.img} /> )}
+
                     </div>
 
 

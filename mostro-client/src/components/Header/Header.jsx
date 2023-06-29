@@ -67,11 +67,16 @@ function Header() {
                       
                       
                         {cart.status ? null : 
+
+                        <div>
+                            {cart.items.length===0 ? null : <div className={styled.contador}>{cart.items.length}</div>}
+                            <button className={styled.button} onClick={() => dispatch(openCart())}>
+                            <CiShoppingCart className={styled.carrito}/>
+                            </button>
+                        </div>
                         
-                        <button onClick={() => dispatch(openCart())}>
-                        <CiShoppingCart className={styled.carrito} /> 
-                        </button>
                         
+                                                                
                         }
                       
 

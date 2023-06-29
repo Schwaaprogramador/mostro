@@ -22,6 +22,13 @@
     cursor: pointer;
 }
 
+/* -------------- BUTTON ------------------- */
+
+.button {
+  /* Eliminar todos los estilos */
+  all: unset;
+}
+
 
 
 
@@ -44,4 +51,20 @@
 /*-----------------BOLSITA DE COMPRAS--------------------*/
 .carrito {
     font-size: 2rem;
+}
+
+.contador {
+    background-color: red;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 1px black solid;
+    height: 10px;
+    width: 10px;
+    font-size: 9px;
+    position: fixed;
+    right: 11px;
+    top: 11px;
 }

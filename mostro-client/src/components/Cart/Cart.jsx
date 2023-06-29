@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import styled from './Cart.module.css';
 import {useSelector, useDispatch  } from "react-redux";
-import { IoClose } from 'react-icons/io5';
+import { IoClose  } from 'react-icons/io5';
 import { closeCart } from '../../redux/cartSlice';
 import { closeNavbar } from '../../redux/navbarSlice';
 import CartItem from './CartItem';
@@ -10,8 +10,8 @@ import CartItem from './CartItem';
 function Cart() {
 
   const dispatch = useDispatch();
-  const cart = useSelector( state => state.cart);
-  console.log(cart.items)
+  const cart = useSelector( state => state.cart );
+  
 
   useEffect(()=>{
     dispatch(closeNavbar());
@@ -50,13 +50,25 @@ function Cart() {
 
                       { cart.items.length > 0 ? 
 
-                      cart.items.map( item => <CartItem img={item.imagenes[0]} nombre={item.nombre} precio={item.precio}/>)
+                      cart.items.map( item => <CartItem   img={item.imagenes[0]}
+                                                          nombre={item.nombre} 
+                                                          precio={item.precio} 
+                                                          cantidad={item.cantidad}
+                                                          id={item.id}/>)
 
                       : <p className={styled.titulo}>Agrega Productos</p>
 
                       }
                       
 
+                  </div>
+
+
+
+                  {/* -----------------TOTAL------------------ */}
+
+                  <div className={styled.total}>
+                      <p>TOTAL</p>
                   </div>
 
 

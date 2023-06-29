@@ -2,13 +2,15 @@ import { createSlice } from "@reduxjs/toolkit";
 
 
 const initialState = {
-    products:[{
+    products:[
+        {
         id:1,
         nombre: 'BASIC ELEMENTS',
         precio: 'COP 75.000',
         description: 'Elaborada en tela licra algodón color azul rey, con estampado en alta densidad del mismo tono de la tela y el logo estampado en plastisol plano color naranja.',
         color: 'azul',
         talla: '',
+        cantidad: 1,
         imagenes: [ 'https://res.cloudinary.com/drnryofoj/image/upload/v1687840800/mostro-imagenes/AzulFrente_iokvhs.jpg', 
                     'https://res.cloudinary.com/drnryofoj/image/upload/v1687840800/mostro-imagenes/AzulDetalleFrente_iiibhr.jpg', 
                     'https://res.cloudinary.com/drnryofoj/image/upload/v1687840800/mostro-imagenes/AzulEspalda_hhxoqu.jpg',
@@ -21,6 +23,7 @@ const initialState = {
         description: 'Elaborada en tela licra algodón color blanco, con estampado en alta densidad del mismo tonode la tela y el logo estampado en plastisol plano color naranja.',
         color: 'blanca',
         talla: '',
+        cantidad: 1,
         imagenes: [ 'https://res.cloudinary.com/drnryofoj/image/upload/v1687840800/mostro-imagenes/BlancaFrente_gsna4w.jpg', 
                     'https://res.cloudinary.com/drnryofoj/image/upload/v1687840800/mostro-imagenes/BlancaEspalda_aifylj.jpg', 
                     'https://res.cloudinary.com/drnryofoj/image/upload/v1687840800/mostro-imagenes/BlancaDetalleFrente_lqee3n.jpg',
@@ -33,6 +36,7 @@ const initialState = {
         description: 'Elaborada en tela licra algodón color negro, con estampado en alta densidad del mismo tono de la tela y el logo estampado en plastisol plano color mostaza.',
         color: 'negra',
         talla: '',
+        cantidad: 1,
         imagenes: [ 'https://res.cloudinary.com/drnryofoj/image/upload/v1687840801/mostro-imagenes/NegraFrente_rdieha.jpg', 
                     'https://res.cloudinary.com/drnryofoj/image/upload/v1687840801/mostro-imagenes/NegraEspalda_gwjl2x.jpg', 
                     'https://res.cloudinary.com/drnryofoj/image/upload/v1687840801/mostro-imagenes/NegraDetalleFrente_dmyhds.jpg',
@@ -45,6 +49,7 @@ const initialState = {
         description: 'Elaborada en tela licra algodón color negro, con aplique en papel foil color tornasol.',
         color: 'negra',
         talla: '',
+        cantidad: 1,
         imagenes: [ 'https://res.cloudinary.com/drnryofoj/image/upload/v1687840801/mostro-imagenes/NegraFrente-2_crhlni.jpg', 
                     'https://res.cloudinary.com/drnryofoj/image/upload/v1687840801/mostro-imagenes/NegraEspalda-2_pw7t59.jpg', 
                     'https://res.cloudinary.com/drnryofoj/image/upload/v1687840802/mostro-imagenes/NegraInferior_nuh8dy.jpg',
@@ -57,6 +62,7 @@ const initialState = {
         description: 'Elaborada en tela licra algodón color blanco, con estampado en alta densidad en el frente y estampado textil en la parte de atrás color verde antioquia.',
         color: 'blanca',
         talla: '',
+        cantidad: 1,
         imagenes: [ 'https://res.cloudinary.com/drnryofoj/image/upload/v1687840800/mostro-imagenes/BlancaFrente-2_m8uygf.jpg', 
                     'https://res.cloudinary.com/drnryofoj/image/upload/v1687840800/mostro-imagenes/BlancaEspalda-2_dswz5z.jpg', 
                     'https://res.cloudinary.com/drnryofoj/image/upload/v1687840800/mostro-imagenes/DetalleFrente_bxger3.jpg',
@@ -69,6 +75,7 @@ const initialState = {
         description: 'Elaborada en tela licra algodón color blanco, con estampado en alta densidad en el frente y estampado textil en la parte de atrás color verde antioquia.',
         color: 'negra',
         talla: '',
+        cantidad: 1,
         imagenes: [ 'https://res.cloudinary.com/drnryofoj/image/upload/v1687840801/mostro-imagenes/NegraFrente332_gwwdri.jpg',
                     'https://res.cloudinary.com/drnryofoj/image/upload/v1687840801/mostro-imagenes/NegraEspalda2_x0gmuf.jpg',
                     'https://res.cloudinary.com/drnryofoj/image/upload/v1687840802/mostro-imagenes/NegroDetalleFrente332_azka2q.jpg',
