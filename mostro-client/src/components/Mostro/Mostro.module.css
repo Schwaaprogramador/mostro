@@ -1,14 +1,44 @@
 .container {
-    background-color: rgb(184, 149, 120);
-    height: 91.5vh;
+    background-color: rgb(255, 255, 255);
+    height: 82.1vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    color: aliceblue;
+    color: black;
 }
 
-.text {
-    width: 20vw;
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.imgContainer {
+    height: 80vh;
+    width: auto;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 333px;
+    gap: 3rem;
+}
+
+.parrafo {
+    line-height: 2rem;
+    padding: 3px;
+    
+}
+
+.titulo {
+    letter-spacing: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
 }

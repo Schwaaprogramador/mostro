@@ -30,9 +30,9 @@ function Navbar() {
                     <div className={styled.enlaces}>
 
                       <Link to="/store" className={styled.link}> TIENDA </Link>
-                      <Link to="/newcollection" className={styled.link}> NUEVA COLECCION </Link>
+                      {/* <Link to="/newcollection" className={styled.link}> NUEVA COLECCION </Link> */}
                       <Link to="/culture" className={styled.link}> CULTURA </Link>
-                      <Link to="/galery" className={styled.link}> GALERIA </Link>
+                      {/* <Link to="/galery" className={styled.link}> GALERIA </Link> */}
                       <Link to="/mostro"  className={styled.link}> MOSTRO </Link>
 
 

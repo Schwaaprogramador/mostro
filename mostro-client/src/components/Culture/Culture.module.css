@@ -1,8 +1,29 @@
 .center {
+    padding: 2rem 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: rgb(114, 75, 47);
-    color: aliceblue;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    gap: 2rem;
+    
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 1rem;
+}
+
+.img {
+    height: 500px;
+    width: auto;
+}
+
+.parrafo {
+    line-height: 2rem;
+    padding: 3px;
+    
 }

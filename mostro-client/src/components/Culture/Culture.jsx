@@ -9,11 +9,11 @@
 
         //-----------CSS------------------------
         import styled from './Culture.module.css';
+
         // //-----------IMAGENES----------
-        // import vistaFrente from '../../../../assets/Steez/Basic Elements/Fotos Negra Recuadro/NegraFrente.jpg';
-        // import vistaEspalda from '../../../../assets/Steez/Basic Elements/Fotos Negra Recuadro/NegraEspalda.jpg'
-        // import vistaInferior from '../../../../assets/Steez/Basic Elements/Fotos Negra Recuadro/NegraInferior.jpg'
-        // import vistaDetalle from '../../../../assets/Steez/Basic Elements/Fotos Negra Recuadro/NegraDetalle.jpg'
+         import img1 from '../../assets/img/gonzo.jpg';
+         import img2 from '../../assets/img/abad.jpg';
+        
 
         //-------COMPONENTES-----------
         import Header from '../Header/Header';
@@ -45,7 +45,33 @@ function Culture() {
 
       <div className={styled.center}>
 
-            <h2>Culture</h2>
+            <div className={styled.section}>
+              <div>
+                <img src={img1} alt="Fernando Gonzalez" className={styled.img}/>
+              </div>
+              <div >
+                <p className={styled.parrafo}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Ea distinctio, officia provident laborum repudiandae 
+                  cumque vero non placeat id culpa a nulla suscipit aut 
+                  perspiciatis fugiat mollitia quasi. Consequuntur, est.
+                </p>
+              </div>
+            </div>
+
+            <div className={styled.section}>
+              <div>
+                <img src={img2} alt="Hector Abad" className={styled.img}/>
+              </div>
+              <div>
+                <p className={styled.parrafo}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Ea distinctio, officia provident laborum repudiandae 
+                  cumque vero non placeat id culpa a nulla suscipit aut 
+                  perspiciatis fugiat mollitia quasi. Consequuntur, est.
+                </p>
+              </div>
+            </div>
         
       </div>
       
