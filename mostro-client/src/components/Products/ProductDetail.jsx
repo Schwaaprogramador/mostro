@@ -26,27 +26,33 @@ function ProductDetail() {
   // const tallas = useSelector(state => state.products.tallas);
 
   const [selectedTalla, setSelectedTalla] = useState('')
-
-  console.log(selectedTalla)
- 
-
+  // const [productoEditable, setProductoEditable] = useState(productDetail[0])
+  
+  
     useEffect(()=>{
-      
+
         dispatch(getDetail(params))
         dispatch(closeNavbar());
         
+        
     },[dispatch, params])
 
-    
+    const tallita = ( talla ) => {
+      //setProductoEditable({...productDetail[0], talla: talla})
+      setSelectedTalla(talla)
+      //console.log(talla)
+      //console.log(productoEditable)
+      //productoEditable.talla = talla
+    }
     const addToBolsita = () => { 
       //antes de mandarlo necesito modificar la talla. Crear una useState para las tallas.
-      
+    
      // productDetail[0].talla = selectedTalla
-      dispatch(addCart(productDetail[0]))
+      dispatch(addCart({...productDetail[0], talla: selectedTalla}))
       
     }
 
-    console.log(productDetail[0])
+
 
     
     
@@ -107,13 +113,11 @@ function ProductDetail() {
 
                                     <div className={styled.caracter}>Elige talla</div>
 
-                                    
-
                                     <div className={styled.tallas}>
-                                        <button className={selectedTalla === 'M' ? styled.tallaSelected : styled.talla} onClick={()=>setSelectedTalla('M')}> M </button>
-                                        <button className={selectedTalla === 'L' ? styled.tallaSelected : styled.talla} onClick={()=>setSelectedTalla('L')}>L</button>
-                                        <button className={selectedTalla === 'XL' ? styled.tallaSelected : styled.talla} onClick={()=>setSelectedTalla('XL')}>XL</button>
-                                        <button className={selectedTalla === 'XXL' ? styled.tallaSelected : styled.talla} onClick={()=>setSelectedTalla('XXL')}>XXL</button>
+                                        <button className={selectedTalla === 'M' ? styled.tallaSelected : styled.talla} onClick={() => tallita('M')}> M </button>
+                                        <button className={selectedTalla === 'L' ? styled.tallaSelected : styled.talla} onClick={ () => tallita('L')}>L</button>
+                                        <button className={selectedTalla === 'XL' ? styled.tallaSelected : styled.talla} onClick={() => tallita('XL')}>XL</button>
+                                        <button className={selectedTalla === 'XXL' ? styled.tallaSelected : styled.talla} onClick={ () => tallita('XXL')}>XXL</button>
                                     </div>
 
                             </div>
