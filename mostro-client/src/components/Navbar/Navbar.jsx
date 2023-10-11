@@ -39,7 +39,7 @@ function Navbar() {
                     </div>
 
                     <div className={styled.footer}>
-                      <p>2023 Mostro Clothing</p>
+                      <p>Por 2023 Mostro Clothing</p>
                     </div>
    
                       

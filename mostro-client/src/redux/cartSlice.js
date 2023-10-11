@@ -24,7 +24,7 @@ export const cartSlice = createSlice({
             else {
                 state.items.push(newItem)                           
             }
-  
+   
         },
         deleteCart: (state, action)=>{
             
@@ -35,10 +35,12 @@ export const cartSlice = createSlice({
                 state.items.splice(itemIndex, 1);
             }
         },
+        
         restarCantidad: (state, action)=>{
             let itemCart = state.items.find( item => item.id === action.payload.id )
-            itemCart.cantidad=-1;
+            itemCart.cantidad = itemCart.cantidad - 1;
         },
+
         totalCart: (state)=>{
            
             let total = state.items.reduce((acumulador, item)=>{

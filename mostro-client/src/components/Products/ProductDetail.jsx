@@ -1,7 +1,7 @@
 //-----------IMPORTACIONES-------------------
 
         //-----------REACT-----------
-        import React from 'react';
+        import React, {useState} from 'react';
         import { useParams } from "react-router-dom";
         import {useSelector, useDispatch  } from "react-redux";
         import { closeNavbar } from '../../redux/navbarSlice.js';
@@ -23,7 +23,13 @@ function ProductDetail() {
   const dispatch = useDispatch();
   const productDetail = useSelector(state => state.products.productDetail); // El estado que se esta renderizando.
   const colores = useSelector(state => state.products.colores); // Array de las camisas con el mismo nombre, diferente color.
-  
+  // const tallas = useSelector(state => state.products.tallas);
+
+  const [selectedTalla, setSelectedTalla] = useState('')
+
+  console.log(selectedTalla)
+ 
+
     useEffect(()=>{
       
         dispatch(getDetail(params))
@@ -31,10 +37,16 @@ function ProductDetail() {
         
     },[dispatch, params])
 
+    
     const addToBolsita = () => { 
+      //antes de mandarlo necesito modificar la talla. Crear una useState para las tallas.
+      
+     // productDetail[0].talla = selectedTalla
       dispatch(addCart(productDetail[0]))
       
     }
+
+    console.log(productDetail[0])
 
     
     
@@ -87,18 +99,21 @@ function ProductDetail() {
                                       {colores.map( color => <Color color={color.color} nombre={color.nombre} id={color.id}/> )}
                               </div>
                               
-
-
                           </div>
                             
+
+
                             <div className={styled.tallasContainer}>
+
                                     <div className={styled.caracter}>Elige talla</div>
 
+                                    
+
                                     <div className={styled.tallas}>
-                                        <div className={styled.talla}>M</div>
-                                        <div className={styled.talla}>L</div>
-                                        <div className={styled.talla}>XL</div>
-                                        <div className={styled.talla}>XXL</div>
+                                        <button className={selectedTalla === 'M' ? styled.tallaSelected : styled.talla} onClick={()=>setSelectedTalla('M')}> M </button>
+                                        <button className={selectedTalla === 'L' ? styled.tallaSelected : styled.talla} onClick={()=>setSelectedTalla('L')}>L</button>
+                                        <button className={selectedTalla === 'XL' ? styled.tallaSelected : styled.talla} onClick={()=>setSelectedTalla('XL')}>XL</button>
+                                        <button className={selectedTalla === 'XXL' ? styled.tallaSelected : styled.talla} onClick={()=>setSelectedTalla('XXL')}>XXL</button>
                                     </div>
 
                             </div>

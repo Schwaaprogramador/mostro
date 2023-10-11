@@ -21,10 +21,9 @@
 
 
 function Culture() {
-
   const dispatch = useDispatch();
   const navbarShow = useSelector(state => state.navbarStatus);
-  
+
   useEffect(()=>{
 
       dispatch(closeNavbar());

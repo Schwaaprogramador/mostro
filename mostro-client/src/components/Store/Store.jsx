@@ -16,7 +16,7 @@ function Store() {
 
   const dispatch = useDispatch();
  // const navbarShow = useSelector(state => state.navbarStatus);
-  const products = useSelector(state=> state.products);
+  const products = useSelector(state => state.products);
   useEffect(()=>{
     dispatch(closeNavbar());
     
@@ -42,14 +42,14 @@ function Store() {
               <section className={styled.clothes}>
 
                 {products.products.map( product => <Product 
-                                                    key={product.id}
-                                                    id={product.id}
-                                                    nombre={product.nombre}
-                                                    precio={product.precio}
-                                                    description={product.description}
-                                                    color={product.color}
-                                                    talla={product.talla}
-                                                    imagenes={product.imagenes}/>)}
+                                                      key={product.id}
+                                                      id={product.id}
+                                                      nombre={product.nombre}
+                                                      precio={product.precio}
+                                                      description={product.description}
+                                                      color={product.color}
+                                                      talla={product.talla}
+                                                      imagenes={product.imagenes}/>)}
                 
               </section>
       
