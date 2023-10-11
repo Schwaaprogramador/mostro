@@ -38,8 +38,6 @@
 
 
 
-
-
 .button {
     
     font-size: 1.5rem;
@@ -77,4 +75,32 @@
 .footer {
     padding: 20px;
     font-size: small;
+}
+
+
+/*--------------------RESPONSIVE----------------------*/
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+
+
+@media (max-width:800px) {
+
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        top: 0%;
+        color: aliceblue;
+        position: fixed;
+        left: 0%;
+        height: 100vh;
+        width: 100vw;
+        z-index: 10000;
+        
+        
+    }
 }

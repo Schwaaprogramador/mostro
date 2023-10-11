@@ -70,7 +70,7 @@
 }
 
 .img {
-    transition: transform 0.3s ease; 
+    transition: transform 0.5s ease; 
     width: 25vw;
     padding-bottom: 2rem;
 }
@@ -200,6 +200,8 @@
         align-items: center;
         margin: 20px;
         padding: 0;
+        
+        
     }
 
 
@@ -210,7 +212,6 @@
         
         order: -1; /*Sirve para poner este elemento al inicio del flex*/
         width: 300px;
-        position: relative;
         display: flex;
         overflow: auto;
         scroll-snap-type: x mandatory;
@@ -239,12 +240,12 @@
         transition: none;
         width: 100%;
         left: 0;
-        position: sticky;
+        /* position: sticky; */
         object-fit: cover;
         border-radius: 5px;
         scroll-snap-align: center;
         scroll-behavior: smooth;
-        
+        z-index:auto;
         
     }
     .img:hover {
